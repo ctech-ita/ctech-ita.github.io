@@ -1,6 +1,6 @@
 {
   "input": "html/*.html",
-  "output": "public",
+  "output": "docs",
   "plugins": {
     "posthtml-modules": {
       "root": "./html",
