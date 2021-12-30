@@ -464,71 +464,30 @@
     </div>
     <!-- End Contact -->
 
-    <footer class="default-padding bg-light">
+    <style>
+    footer .f-item .address li i {
+        color: #AB1211;
+        background: none;
+    }
+
+    footer .container {
+        border-top: 1px solid #e7e7e7;
+        padding-top: 50px;
+    }
+</style>
+
+<footer class="default-padding bg-light">
     <div class="container">
         <div class="f-items">
             <div class="row">
-                <div class="col-lg-3 col-md-6 item">
-                    <div class="f-item">
-                        <img src="assets/img/logo.png" alt="Logo">
-                        <p>
-                            Excellence decisively nay man yet impression for contrasted remarkably. There spoke
-                            happy for you are out. Fertile how old address did showing because sitting replied six.
-                            Had arose guest visit going off child she new.
-                        </p>
-                        <a href="#" class="btn circle btn-theme effect btn-sm">Get Started</a>
+                <div class="col-lg-6">
+                    <div class="google-maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.8571524204235!2d13.492721515866782!3d43.27536837913602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132df4e092f004bd%3A0xc02b4ffbc3c49b92!2sComputer&#39;s%20Technology!5e0!3m2!1sen!2sit!4v1640878869249!5m2!1sen!2sit" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 item">
-                    <div class="f-item link">
-                        <h4>Quick LInk</h4>
-                        <ul>
-                            <li>
-                                <a href="#"><i class="fas fa-angle-right"></i> Home</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-angle-right"></i> About us</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-angle-right"></i> Compnay History</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-angle-right"></i> Features</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-angle-right"></i> Blog Page</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 item">
-                    <div class="f-item link">
-                        <h4>Community</h4>
-                        <ul>
-                            <li>
-                                <a href="#"><i class="fas fa-angle-right"></i> Career</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-angle-right"></i> Leadership</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-angle-right"></i> Strategy</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-angle-right"></i> Services</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-angle-right"></i> History</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 item">
+
+                <div class="col-lg-6">
                     <div class="f-item twitter-widget">
-                        <h4>Contact Info</h4>
-                        <p>
-                            Estimating stimulated how reasonably precaution diminution she simplicity
-                        </p>
                         <div class="address">
                             <ul>
                                 <li>
@@ -536,8 +495,8 @@
                                         <i class="fas fa-home"></i>
                                     </div>
                                     <div class="info">
-                                        <h5>Website:</h5>
-                                        <span>www.validtheme.com</span>
+                                        <h5>Indirizzo:</h5>
+                                        <span>Via Cluentina, 26/B <br>Loc. Piediripa di Macerata (MC)<br> 62100</span>
                                     </div>
                                 </li>
                                 <li>
@@ -546,7 +505,7 @@
                                     </div>
                                     <div class="info">
                                         <h5>Email:</h5>
-                                        <span>support@validtheme.com</span>
+                                        <span><a href="mailto:info@ctech.it">info@ctech.it</a></span>
                                     </div>
                                 </li>
                                 <li>
@@ -554,8 +513,8 @@
                                         <i class="fas fa-phone"></i>
                                     </div>
                                     <div class="info">
-                                        <h5>Phone:</h5>
-                                        <span>+44-20-7328-4499</span>
+                                        <h5>Telefono:</h5>
+                                        <span>Tel. 0733.281142 292776 </span>
                                     </div>
                                 </li>
                             </ul>
@@ -594,8 +553,8 @@
 <!-- jQuery Frameworks
     ============================================= -->
 <script src="assets/js/jquery-1.12.4.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.appear.js"></script>
 <script src="assets/js/jquery.easing.min.js"></script>
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
@@ -605,6 +564,12 @@
 <script src="assets/js/count-to.js"></script>
 <script src="assets/js/bootsnav.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+    // initialise all popovers
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
 
 </body>
 
