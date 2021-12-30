@@ -89,8 +89,8 @@
 <!-- jQuery Frameworks
     ============================================= -->
 <script src="assets/js/jquery-1.12.4.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.appear.js"></script>
 <script src="assets/js/jquery.easing.min.js"></script>
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
@@ -100,3 +100,9 @@
 <script src="assets/js/count-to.js"></script>
 <script src="assets/js/bootsnav.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+    // initialise all popovers
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
