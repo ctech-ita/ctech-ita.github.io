@@ -42,15 +42,23 @@
     
     ###TODO
 
+    Dani:
+    - popup
+    - favicon
 
-    - .popover-body {} TBD 
-    - celeste sparire ovunque
-    - Clienti: loghi
-    - Replace SW OVERWIEW Con carousel di osra-boint + screenshots
-    - Customer Review - togliere o rimediare
+
+    Tommi:
+    - rimediare logo clienti da mettere in "alcuni dei nostri clienti"
+    - screenshot winwaste
+    - rimediare customer review ( oppure la tolgo )
     - footer-bottom: informativa
     
     */
+    /* Styles Overrides */
+    .site-heading h2::before {
+        background: #F3C63D none repeat scroll 0 0;
+    }
+
     .services-area .services-box .item i {
         color: #ffffff;
     }
@@ -105,6 +113,29 @@
         width: 90%;
         margin-left: 100px;
     }
+
+    .companies-area .clients-items .owl-nav .owl-prev,
+    .companies-area .clients-items .owl-nav .owl-next {
+        color: #F3C63D
+    }
+
+    .overview-area .overview-carousel .owl-nav .owl-prev,
+    .overview-area .overview-carousel .owl-nav .owl-next {
+        color: #F3C63D
+    }
+
+    .overview-area .overview-items .owl-dots .owl-dot.active span,
+    .overview-area .overview-items .owl-dots .owl-dot:hover span {
+        background: #F3C63D none repeat scroll 0 0;
+    }
+
+    .overview-area .overview-items .owl-dots .owl-dot span {
+        border: none;
+    }
+
+    .testimonial-items span {
+        color: #F3C63D;
+    }
 </style>
 
 <body>
@@ -130,7 +161,7 @@
             <!-- End Header Navigation -->
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-menu">
+            <!-- <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
                     <li>
                         <a class="smooth-menu" href="index.html">Home</a>
@@ -151,7 +182,8 @@
                             </li>
 
                             <li class="dropdown dropdown-right">
-                                <a href="#home" class="dropdown-toggle smooth-menu" data-toggle="dropdown">Commercialisti</a>
+                                <a href="#home" class="dropdown-toggle smooth-menu"
+                                    data-toggle="dropdown">Commercialisti</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="osra-bpoint.html">OSRA - BPoint</a></li>
                                     <li><a href="osra-genya.html">Osra - Genya</a></li>
@@ -170,7 +202,7 @@
                         <a class="smooth-menu" href="index.html">Contatti</a>
                     </li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
+            </div> -->
         </div>
 
     </nav>
@@ -245,8 +277,8 @@
                                 <!-- Single Item -->
                                 <div class="col-lg-3 col-md-6 single-item">
                                     <div class="item">
-                                        <i class="flaticon-customer-support"></i>
-                                        <h5>Manutenzione impianti</h5>
+                                        <i class="fas fa-calculator"></i>
+                                        <h5>Gestione Costi</h5>
                                     </div>
                                 </div>
                                 <!-- End Single Item -->
@@ -389,7 +421,7 @@
 
     <!-- Start Overview 
     ============================================= -->
-    <div id="overview" class="overview-area default-padding">
+    <div id="overview" class="overview-area bg-gray default-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
@@ -404,48 +436,16 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-10 offset-lg-1 text-center overview-items">
-                    <!-- Tab Nav -->
-                    <ul id="tabs" class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a href="" data-target="#tab1" data-toggle="tab" class="active nav-link">
-                                <i class="flaticon-test"></i>
-                                Collaboration
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" data-target="#tab2" data-toggle="tab" class="nav-link">
-                                <i class="flaticon-heart"></i>
-                                Technology
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" data-target="#tab3" data-toggle="tab" class="nav-link">
-                                <i class="flaticon-dental-checkup"></i>
-                                Customize
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- End Tab Nav -->
-
-                    <!-- Start Tab Content -->
-                    <div id="tabsContent" class="tab-content">
-                        <div id="tab1" class="tab-pane fade active show">
-                            <img src="assets/img/1500x700.png" alt="Thumb">
-                        </div>
-                        <div id="tab2" class="tab-pane fade">
-                            <img src="assets/img/1500x700.png" alt="Thumb">
-                        </div>
-                        <div id="tab3" class="tab-pane fade">
-                            <img src="assets/img/1500x700.png" alt="Thumb">
-                        </div>
+                <div class="col-lg-12 col-md-12 text-center overview-items">
+                    <div class="overview-carousel owl-carousel owl-theme">
+                        <img src="assets/img/800x600.png" alt="Thumb">
+                        <img src="assets/img/800x600.png" alt="Thumb">
+                        <img src="assets/img/800x600.png" alt="Thumb">
                     </div>
-                    <!-- End Tab Content -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Overview -->
 
 
     <!-- Start Testimonials 
@@ -531,8 +531,12 @@
 
 <footer class="default-padding bg-light">
     <div class="container">
-        <div class="f-items">
+        <div class="f-items" id="contact">
+            <div class="site-heading single text-center">
+                <h2>Contatti</h2>
+            </div>
             <div class="row">
+
                 <div class="col-lg-6">
                     <div class="google-maps">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.8571524204235!2d13.492721515866782!3d43.27536837913602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132df4e092f004bd%3A0xc02b4ffbc3c49b92!2sComputer&#39;s%20Technology!5e0!3m2!1sen!2sit!4v1640878869249!5m2!1sen!2sit" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -581,9 +585,9 @@
             <div class="col-lg-12">
                 <div class="row">
                     <div class="col-lg-6">
-                        <p>&copy; Copyright 2018. All Rights Reserved by <a href="#">validthemes</a></p>
+                        <p>&copy; Copyright 2021. All Rights Reserved by <strong>Computer's Technology</strong></p>
                     </div>
-                    <div class="col-lg-6 text-right link">
+                    <!-- <div class="col-lg-6 text-right link">
                         <ul>
                             <li>
                                 <a href="#">Terms of user</a>
@@ -595,7 +599,7 @@
                                 <a href="#">Support</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
