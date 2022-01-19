@@ -10,9 +10,8 @@
 
     Dani:
     - popup
-    - togliere celeste everywhere
-    - nascondere nav bar
     - favicon
+
 
     Tommi:
     - rimediare logo clienti da mettere in "alcuni dei nostri clienti"
@@ -21,6 +20,11 @@
     - footer-bottom: informativa
     
     */
+    /* Styles Overrides */
+    .site-heading h2::before {
+        background: #F3C63D none repeat scroll 0 0;
+    }
+
     .services-area .services-box .item i {
         color: #ffffff;
     }
@@ -74,6 +78,29 @@
     .banner {
         width: 90%;
         margin-left: 100px;
+    }
+
+    .companies-area .clients-items .owl-nav .owl-prev,
+    .companies-area .clients-items .owl-nav .owl-next {
+        color: #F3C63D
+    }
+
+    .overview-area .overview-carousel .owl-nav .owl-prev,
+    .overview-area .overview-carousel .owl-nav .owl-next {
+        color: #F3C63D
+    }
+
+    .overview-area .overview-items .owl-dots .owl-dot.active span,
+    .overview-area .overview-items .owl-dots .owl-dot:hover span {
+        background: #F3C63D none repeat scroll 0 0;
+    }
+
+    .overview-area .overview-items .owl-dots .owl-dot span {
+        border: none;
+    }
+
+    .testimonial-items span {
+        color: #F3C63D;
     }
 </style>
 
@@ -152,8 +179,8 @@
                                 <!-- Single Item -->
                                 <div class="col-lg-3 col-md-6 single-item">
                                     <div class="item">
-                                        <i class="flaticon-customer-support"></i>
-                                        <h5>Manutenzione impianti</h5>
+                                        <i class="fas fa-calculator"></i>
+                                        <h5>Gestione Costi</h5>
                                     </div>
                                 </div>
                                 <!-- End Single Item -->
