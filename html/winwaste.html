@@ -11,6 +11,8 @@
     Dani:
     - popup
     - favicon
+    - Fix mobile UX ( navbar, popup)
+    - cookies
 
 
     Tommi:
@@ -103,6 +105,14 @@
         color: #F3C63D;
     }
 
+    .site-heading h2 {
+        font-size: 40px;
+    }
+
+    .services-area .services-box .item h5 {
+        font-size: 23px
+    }
+
     /* ModalX */
 
     .modalx {
@@ -135,8 +145,21 @@
     .modalx-content-wrapper {
         background-color: #d7a613;
         padding: 40px 20px;
-        font-family: "Helvetica", sanf-serif;
+        font-size: 30px;
+        line-height: 33px;
     }
+
+    .modalx-content-wrapper h2 {
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    @media (max-width: 576px) {
+        /* TODO Fix popup on mobile */
+        /* .modalx-content-wrapper {
+            position: absolute;
+            top: 33%;
+        } */
     }
 </style>
 
@@ -158,7 +181,7 @@
                         <div class="row">
                             <div class="col-lg-8 offset-lg-2">
                                 <div class="site-heading text-center">
-                                    <h2>IL TUO BUSINESS MERITA IL SOFTWARE MIGLIORE </h2>
+                                    <h2>IL TUO BUSINESS MERITA UN SOFTWARE MIGLIORE </h2>
                                     <h3>
                                         <b style="color: #F3C63D">WINWASTE</b> è il software per la gestione dei rifiuti
                                         leader di mercato in Italia.
@@ -317,15 +340,14 @@
                             temi
                             ambientali.
                             Prestiamo puntuale attenzione sia alle continue evoluzioni tecnologiche che normative,
-                            attenzioni imprescindibili nel nostro settore. Il risultato è un prodotto versatile,
-                            all’avanguardia da tutti i punti vista e sempre conforme alle normative vigenti.<br><br>
-                            Oltre all’enorme contributo che WINWASTE apporterebbe alla tua azienda, scegliere
-                            <b>Computer’s
-                                Technology</b> significa apportare un ulteriore valore aggiunto, in quanto è nostra
-                            costante
-                            premura
-                            formare con competenza, fornire supporto continuo e informare con puntualità i nostri
-                            Clienti.
+                            requisito imprescindibile nel nostro settore. Il software che proponiamo è diretta
+                            conseguenza della filosofia da noi sposata: un prodotto versatile, all’avanguardia sotto
+                            tutti i punti di vista e sempre conforme alle normative vigenti.<br><br>
+
+                            Oltre all’enorme contributo che WINWASTE fornirebbe alla tua azienda, scegliere Computer’s
+                            Technology significherebbe
+                            apportare un ulteriore valore aggiunto. è infatti nostra costante premura formare con
+                            competenza, fornire supporto ed informare con puntualità i nostri Clienti.
                         </span>
                     </p>
 
@@ -334,7 +356,8 @@
                             class="btn circle btn-theme effect btn-md">Scarica la brochure</a>
                     </div>
                     <p>
-                        <i>WINWASTE è prodotto e distribuito da Nica srl - società del gruppo Zucchetti Spa, con sede a
+                        <i style="font-size: 12px;">WINWASTE è prodotto e distribuito da Nica srl - società del gruppo
+                            Zucchetti Spa, con sede a
                             Napoli, Bergamo, Rovigo, Torino e con una rete di partner presenti su tutto il territorio
                             Nazionale. Con oltre 3000 installazioni attive accompagniamo i nostri clienti alla scoperta
                             di
