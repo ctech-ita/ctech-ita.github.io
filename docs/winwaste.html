@@ -709,6 +709,8 @@
 
     <script>
         $('[data-toggle="modalx"]').click(function (e) {
+            $('#modalx-title').text("");
+            $('#modalx-content').text("");
             const title = e.currentTarget.dataset.title;
             const content = e.currentTarget.dataset.content;
             $('#modalx-title').text(title);
@@ -718,8 +720,6 @@
         });
 
         $('.modalx').click(function (e) {
-            $('#modalx-title').text("");
-            $('#modalx-content').text("");
             $('.modalx').removeClass('active');
             e.preventDefault();
         });
