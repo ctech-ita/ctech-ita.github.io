@@ -102,6 +102,40 @@
     .testimonial-items span {
         color: #F3C63D;
     }
+
+    /* ModalX */
+
+    .modalx {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 101;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.5s, visibility 0s 0.5s;
+    }
+
+    .modalx div.container {
+        position: absolute;
+        min-height: 100%;
+        height: 100%;
+        min-width: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modalx.active {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.5s;
+    }
+
+    .modalx-content-wrapper {
+        background-color: #F3C63D;
+        padding: 40px 20px;
+    }
 </style>
 
 <body>
@@ -131,78 +165,124 @@
                             </div>
                         </div>
                         <div class="services-box text-center">
+                            <!-- Start Modals -->
+                            <div class="modalx">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-8 offset-lg-2 align-self-center modalx-content-wrapper">
+                                            <h2 id="modalx-title"></h2>
+                                            <span id="modalx-content"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Modals -->
+
+
+                            <!-- Start Buttons -->
                             <div class="row">
                                 <!-- Single Item -->
                                 <div class="col-lg-3 col-md-6 single-item">
-                                    <div class="item" data-container="body" data-toggle="popover" data-placement="right"
-                                        data-trigger="hover" data-title="Gestione Rifiuti" data-content="
-                                        Il modulo fondamentale per gestire gli adempimenti amministrativi ed
-                                        ambientali della sua azienda. Qualunque sia la sua attività (produzione,
-                                        trasporto, impianto di trattamento, intermediario, sistema collettivo,
-                                        associazione di categoria etc.) troverà nel pacchetto base di WINWASTE la
-                                        possibilità di organizzare il suo lavoro in maniera semplice ed efficace.
-                                        FIR, Registri di Carico e Scarico, MUD, Interoperabilità Sistri, Schede Area
-                                        Movimentazione, Registri Cronologici, Programmazione dei ritiri, Statistiche
-                                        e tantissime altre funzioni che le consentiranno di avere a portata di click
-                                        qualsiasi dato.">
-
+                                    <div class="item" data-toggle="modalx" data-title="Gestione Rifiuti" data-content="Il modulo fondamentale per gestire gli adempimenti amministrativi ed
+                                    ambientali della sua azienda. Qualunque sia la sua attività (produzione,
+                                    trasporto, impianto di trattamento, intermediario, sistema collettivo,
+                                    associazione di categoria etc.) troverà nel pacchetto base di WINWASTE
+                                    la
+                                    possibilità di organizzare il suo lavoro in maniera semplice ed
+                                    efficace.
+                                    FIR, Registri di Carico e Scarico, MUD, Interoperabilità Sistri, Schede
+                                    Area
+                                    Movimentazione, Registri Cronologici, Programmazione dei ritiri,
+                                    Statistiche
+                                    e tantissime altre funzioni che le consentiranno di avere a portata di
+                                    click
+                                    qualsiasi dato.">
                                         <i class="fas fa-trash"></i>
-
                                         <h5>Gestione rifiuti</h5>
                                     </div>
                                 </div>
                                 <!-- End Single Item -->
+
                                 <!-- Single Item -->
                                 <div class="col-lg-3 col-md-6 single-item">
-                                    <div class="item">
+                                    <div class="item" data-toggle="modalx"
+                                        data-title="Fatturazione e gestione amminsitrativa" data-content="Il completamento ideale del modulo base per gestire la fatturazione, i clienti ed i fornitori.
+                                        Dalla emissione e registrazione dei FIR alla fatturazione in maniera semplice e veloce attraverso il modulo di gestione dei rapporti commerciali.
+                                        Potrà personalizzare, per ogni cliente, i prezzi dei servizi e/o del CER ed ottenere automaticamente la fatturazione periodica e la registrazione contabile.
+                                        ">
+
                                         <i class="fas fa-file-invoice"></i>
                                         <h5>Fatturazione e gestione amminsitrativa</h5>
                                     </div>
                                 </div>
                                 <!-- End Single Item -->
+
                                 <!-- Single Item -->
                                 <div class="col-lg-3 col-md-6 single-item">
-                                    <div class="item">
+                                    <div class="item" data-toggle="modalx" data-title="Gestione Magazzino End of Waste"
+                                        data-content="Dalla lavorazione dei rifiuti si estraggono materie nuove? Questo modulo è particolarmente indicato per le imprese che, dopo la lavorazione di determinate tipologie di rifiuti, si ritrovano a dover gestire un magazzino merci end of waste con la possibilità di classificare i prodotti attraverso una codifica particolarmente articolata.
+                                    Un tool completo per la emissione dei DDT, ordini di lavoro, fatturazione dei prodotti end of waste e, soprattutto, per controllare le merci presso terzi quali cassoni scarrabili, contenitori a perdere o attrezzature.
+                                    ">
                                         <i class="fas fa-recycle"></i>
                                         <h5>Gestione Magazzino End of Waste</h5>
                                     </div>
                                 </div>
                                 <!-- End Single Item -->
+
                                 <!-- Single Item -->
                                 <div class="col-lg-3 col-md-6 single-item">
-                                    <div class="item">
+                                    <div class="item" data-toggle="modalx" data-title="Gestione Automezzi" data-content="Il modo più semplice per tenere sotto controllo il parco automezzi adibiti al trasporto dei rifiuti e le eventuali attrezzature di bordo. Efficace per monitorare i consumi di carburante, i costi della manutenzione ordinaria e straordinaria avvalendosi della totale integrazione con il magazzino per la gestione degli approvvigionamenti di prodotti.
+                                    Con il modulo parco automezzi si possono associare ad ogni automezzo le relative scadenze e documenti in formato PDF quali, ad esempio, libretti di circolazione e/o eventuali foto.
+                                    Dotato di un potente motore statistico, consente il confronto del costo/Km per automezzo.
+                                    ">
                                         <i class="fas fa-truck"></i>
                                         <h5>Gestione Automezzi</h5>
                                     </div>
                                 </div>
                                 <!-- End Single Item -->
+
                                 <!-- Single Item -->
                                 <div class="col-lg-3 col-md-6 single-item">
-                                    <div class="item">
+                                    <div class="item" data-toggle="modalx" data-title="Gestione Costi" data-content="Un modulo particolare per coloro che desiderano controllare i costi dei conferimenti presso i fornitori di servizi quali impianti di smaltimento rifiuti e relazionarli con i relativi contratti attivi dei clienti.
+                                    Un sistema che permette di verificare le fatture in arrivo attraverso il consolidamento dei costi ed ottenere un raffronto economico con i ricavi ottenuti da una singola attività.
+                                    Utile anche a coloro che intendono consuntivare ai propri fornitori i servizi ricevuti ed autorizzare all’emissione delle fatture.
+                                    ">
                                         <i class="fas fa-calculator"></i>
                                         <h5>Gestione Costi</h5>
                                     </div>
                                 </div>
                                 <!-- End Single Item -->
+
                                 <!-- Single Item -->
                                 <div class="col-lg-3 col-md-6 single-item">
-                                    <div class="item">
+                                    <div class="item" data-toggle="modalx" data-title="Autodemolitori" data-content="Questo modulo aggiuntivo è stato realizzato per soddisfare le specifiche esigenze delle aziende coinvolte nella gestione dei veicoli destinati all' autodemolizione. Semplifica il coordinamento delle pratiche di autodemolizione e l'adempimento delle normative vigenti.
+                                    I moduli software ed i servizi sono stati realizzati al fine di sintetizzare i numerosi processi necessari alla gestione dell'attività degli Autodemolitori e delle Concessionarie Auto, ottimizzando i tempi operativi e l'efficienza del personale.
+                                    L’integrazione in WINWASTE consente di effettuare automaticamente le operazioni di carico e scarico sui registri dei rifiuti generati attraverso le prese in carico e le operazioni di messa in sicurezza.
+                                    ">
                                         <i class="fas fa-truck-moving"></i>
                                         <h5>Autodemolitori</h5>
                                     </div>
                                 </div>
                                 <!-- End Single Item -->
+
                                 <!-- Single Item -->
                                 <div class="col-lg-3 col-md-6 single-item">
-                                    <div class="item">
+                                    <div class="item" data-toggle="modalx" data-title="Geolocalizzazione mezzi"
+                                        data-content="Il sistema di geo localizzazione integrato in WINWASTE che consente di tenere traccia delle attività della propria flotta generando le missioni anche attraverso la stampa dei formulari di identificazione dei rifiuti.
+                                    Trackysat, oltre ad esporre le funzioni classiche di un sistema di geo localizzazione quali ad esempio il consumo dei carburanti, il controllo delle temperature, lo scarico del cronotachigrafo, il controllo dell’autista etc., ha il suo plus nell’interfaccia appositamente realizzata per WINWASTE che consente di dialogare in real-time col sistema e generare alert mirati e controllati direttamente dall’applicativo.
+                                    ">
                                         <i class="fas fa-map-marker-alt"></i>
                                         <h5>Geolocalizzazione mezzi</h5>
                                     </div>
                                 </div>
                                 <!-- End Single Item -->
+
                                 <!-- Single Item -->
                                 <div class="col-lg-3 col-md-6 single-item">
-                                    <div class="item">
+                                    <div class="item" data-toggle="modalx" data-title="Wingap" data-content="È la piattaforma web che consente ai propri clienti di accedere ai dati direttamente on line sul server aziendale. WINWASTE determina le policy di accesso attraverso la creazione e la gestione di credenziali specifiche e consente ai clienti aziendali di visualizzare le informazioni delle attività che li riguardano.
+                                    Per il cliente, WINGAP offre la possibilità di avere l’elenco dei movimenti di carico e scarico on line in formato PDF e/o XLS, di effettuare una richiesta di ritiro, verificare la data di prelievo, controllare il proprio estratto conto e le scadenze, gestire in autonomia il proprio registro di carico e scarico ed avere in automatico il MUD on line attraverso l’elaborazione automatica del MUD aziendale.
+                                    WINGAP è la finestra esterna che azzera i tempi di comunicazione con il cliente.
+                                    ">
                                         <i class="fas fa-comment-dots"></i>
                                         <h5>Wingap</h5>
                                     </div>
@@ -425,6 +505,23 @@
 
     <module href="/components/footer.html"></module>
 
+    <script>
+        $('[data-toggle="modalx"]').click(function (e) {
+            const title = e.currentTarget.dataset.title;
+            const content = e.currentTarget.dataset.content;
+            $('#modalx-title').text(title);
+            $('#modalx-content').text(content);
+            $('.modalx').addClass('active');
+            e.preventDefault();
+        });
+
+        $('.modalx').click(function (e) {
+            $('#modalx-title').text("");
+            $('#modalx-content').text("");
+            $('.modalx').removeClass('active');
+            e.preventDefault();
+        });
+    </script>
 </body>
 
 </html>
