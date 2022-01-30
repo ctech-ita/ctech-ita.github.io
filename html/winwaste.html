@@ -9,9 +9,8 @@
     ###TODO
 
     Dani:
-    - popup centro pagina
     - favicon
-    - Fix mobile UX ( navbar, popup)
+    - Fix mobile UX ( navbar, smooth scrolling)
     - cookies
     
     */
@@ -120,6 +119,12 @@
 
     /* ModalX */
 
+    .stop-scrolling {
+        height: 100%;
+        overflow: hidden;
+    }
+
+
     .modalx {
         position: absolute;
         top: 0;
@@ -130,15 +135,10 @@
         visibility: hidden;
         opacity: 0;
         transition: opacity 0.5s, visibility 0s 0.5s;
-    }
-
-    .modalx div.container {
-        position: absolute;
-        min-height: 100%;
-        height: 100%;
-        min-width: 100%;
-        width: 100%;
         background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .modalx.active {
@@ -152,19 +152,13 @@
         padding: 40px 20px;
         line-height: 33px;
         font-size: 22px;
+        width: 70%;
+        margin: 0 auto;
     }
 
     .modalx-content-wrapper h2 {
         font-size: 30px;
         font-weight: bolder;
-    }
-
-    @media (max-width: 576px) {
-        /* TODO Fix popup on mobile */
-        /* .modalx-content-wrapper {
-            position: absolute;
-            top: 33%;
-        } */
     }
 </style>
 
@@ -174,6 +168,15 @@
     ============================================= -->
     <module href="/components/header.html"></module>
     <!-- End Header -->
+
+    <!-- Start Modals -->
+    <div class="modalx">
+        <div class="modalx-content-wrapper">
+            <h2 id="modalx-title"></h2>
+            <span id="modalx-content"></span>
+        </div>
+    </div>
+    <!-- End Modals -->
 
     <!-- Start Banner 
     ============================================= -->
@@ -195,20 +198,6 @@
                             </div>
                         </div>
                         <div class="services-box text-center">
-                            <!-- Start Modals -->
-                            <div class="modalx">
-                                <div class="container">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-8 offset-lg-2 align-self-center modalx-content-wrapper">
-                                            <h2 id="modalx-title"></h2>
-                                            <span id="modalx-content"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Modals -->
-
-
                             <!-- Start Buttons -->
                             <div class="row">
                                 <!-- Single Item -->
@@ -443,11 +432,17 @@
             $('#modalx-title').text(title);
             $('#modalx-content').text(content);
             $('.modalx').addClass('active');
+
+            $('body').addClass('stop-scrolling')
+            $('body').bind('touchmove', function (e) { e.preventDefault() })
+
             e.preventDefault();
         });
 
         $('.modalx').click(function (e) {
             $('.modalx').removeClass('active');
+            $('body').removeClass('stop-scrolling')
+            $('body').unbind('touchmove')
             e.preventDefault();
         });
     </script>
