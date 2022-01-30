@@ -43,8 +43,7 @@
     ###TODO
 
     Dani:
-    - favicon
-    - Fix mobile UX ( navbar, smooth scrolling)
+    - Fix mobile UX ( navbar, smooth scrolling, popup)
     - cookies
     
     */
@@ -160,7 +159,7 @@
 
 
     .modalx {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         height: 100%;
@@ -187,12 +186,19 @@
         line-height: 33px;
         font-size: 22px;
         width: 70%;
-        margin: 0 auto;
     }
 
     .modalx-content-wrapper h2 {
         font-size: 30px;
         font-weight: bolder;
+    }
+
+    @media (max-width: 576px) {
+        .modalx {
+        }
+
+        .modalx-content-wrapper {
+        }
     }
 </style>
 
