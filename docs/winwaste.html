@@ -43,7 +43,7 @@
     ###TODO
 
     Dani:
-    - Fix mobile UX ( navbar, smooth scrolling, popup, loghi)
+    - Fix mobile UX ( navbar, smooth scrolling, loghi)
     - cookies
     
     */
@@ -162,8 +162,8 @@
         position: fixed;
         top: 0;
         left: 0;
-        height: 100%;
-        width: 100%;
+        height: 100vh;
+        width: 100vw;
         z-index: 101;
         visibility: hidden;
         opacity: 0;
@@ -182,10 +182,12 @@
 
     .modalx-content-wrapper {
         background-color: #d7a613;
-        padding: 40px 20px;
-        line-height: 33px;
+        padding: 5%;
+        line-height: 1.3em;
         font-size: 22px;
-        width: 70%;
+        width: 80%;
+        max-height: 90%;
+        overflow-y: scroll;
     }
 
     .modalx-content-wrapper h2 {
