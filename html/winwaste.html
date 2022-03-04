@@ -4,16 +4,6 @@
 <module href="/components/head.html"></module>
 
 <style>
-    /* 
-    
-    ###TODO
-
-    Dani:
-    - mobile modal scrolling
-    - cookies
-    - Google Analytics
-    
-    */
     /* Styles Overrides */
     .site-heading h2::before {
         background: #F3C63D none repeat scroll 0 0;
@@ -124,10 +114,11 @@
     /* ModalX */
 
     .stop-scrolling {
-        height: 100%;
+        touch-action: none;
+        overscroll-behavior: none;
+        -webkit-overflow-scrolling: auto;
         overflow: hidden;
     }
-
 
     .modalx {
         position: fixed;
@@ -444,6 +435,8 @@
 
             e.preventDefault();
         });
+
+
 
         $('.modalx').click(function (e) {
             $('.modalx').removeClass('active');
