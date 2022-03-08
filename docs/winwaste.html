@@ -403,7 +403,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class="btn circle btn-light effect btn-md" xhref="#contact" onclick="document.getElementById(&quot;contact&quot;).scrollIntoView({behavior: &quot;smooth&quot;}); return false;">Richiedi
+                    <a class="btn circle btn-light effect btn-md" onclick="scrollToContacts();">Richiedi
                         Informazioni
                     </a>
                 </div>
@@ -640,6 +640,14 @@
 <script src="assets/js/bootsnav.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+<script>
+    function scrollToContacts() {
+        document.getElementById("contact").scrollIntoView({
+            behavior: "smooth"
+        });
+        return false;
+    }
+</script>
 
     <script>
         $('[data-toggle="modalx"]').click(function (e) {
