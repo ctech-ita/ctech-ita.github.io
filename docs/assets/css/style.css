@@ -4016,3 +4016,22 @@ footer.color-yellow .footer-bottom p a {
   background: url(assets/img/preloader.gif) center no-repeat #fff;
   text-align: center;
 }
+
+/* ============================================================== 
+     # Custom Overrides 
+=================================================================== */
+
+.companies-area .clients-items {
+  height: 150px;
+}
+
+.companies-area .clients-items .single-item {
+  display: flex;
+  justify-content: "center";
+  align-items: "center";
+}
+
+.companies-area .clients-items .single-item img {
+  height: 150px;
+  background-color: white;
+}
