@@ -51,12 +51,25 @@
         margin-bottom: 100px;
     }
 
+    .services-area .services-box .item {
+        height: 100%;
+    }
+
     .services-area .services-box .item p {
         text-align: justify;
     }
 
     .works-process-items .item p {
         text-align: justify;
+    }
+
+    #arca-logo {
+        height: 1.9em;
+    }
+
+    .companies-area {
+        padding-top: 50px;
+        padding-bottom: 50px
     }
 </style>
 
@@ -123,13 +136,6 @@
 </header>
     <!-- End Header -->
 
-    <!-- 
-        TODO:
-            - Manca la brochure pdf
-            - I testi delle funzionalita so troppo lunghi
-            - Le icone delle funzionalita le puoi sceglie qua: https://fontawesome.com/v4/icons/ oppure https://www.flaticon.com/
-            - Arca Screenshots
-     -->
     <!-- Start Banner 
     ============================================= -->
     <div class="banner-area shape-index transparent-nav content-double text-medium">
@@ -140,7 +146,7 @@
                         <div class="row align-center">
                             <div class="col-lg-6 left-info simple-video">
                                 <div class="content" data-animation="animated fadeInUpBig">
-                                    <h1><img src="assets/img/arca/logoarca.bmp" height="120"> : Il prodotto su
+                                    <h1><img src="assets/img/arca/logoarca.bmp" id="arca-logo"> : Il prodotto su
                                         misura per la tua
                                         Azienda</h1>
                                     <p>
@@ -175,8 +181,10 @@
                     <div class="site-heading text-center">
                         <h2>Le Funzionalità di Arca Evolution</h2>
                         <p>
-                            Arca Evolution ti aiuta a digitalizzare le aree della tua Azienda per velocizzarne le
-                            operazioni, ridurre gli errori e creare un valore aggiunto.
+                            Arca Evolution ti aiuta a <i>digitalizzare</i> le aree della tua Azienda per
+                            velocizzarne le
+                            operazioni, ridurre gli errori e creare un valore aggiunto in termini di tempo, efficienza,
+                            precisione.
                         </p>
                     </div>
                 </div>
@@ -196,53 +204,39 @@
                         </div>
                     </div>
                     <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-lg-3 col-md-6 single-item">
-                        <div class="item">
-                            <i class="flaticon-feature"></i>
-                            <h5>Finanza, tesoreria e controllo</h5>
-                            <p>
-                                Avere evidenza delle scadenze di pagamento, incassi, insoluti, rischi credito, così da
-                                ottenere un sano bilanciamento dei flussi di cassa. Gestire i rapporti con le banche in
-                                termini di fido, RI.BA. e bonifici. Tenere traccia delle disponibilità finanziarie e
-                                delle linee di finanziamento attuali e future.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
+
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
                         <div class="item">
                             <i class="flaticon-intersect"></i>
                             <h5>Gestione Acquisti e Vendite</h5>
                             <p>
-                                Gestire il ciclo degli acquisti sia in termini di approvvigionamento di materiali e
-                                servizi dai fornitori sia in termini di relativo ciclo documentale. Governare tutte le
-                                attività aziendali che hanno come controparte il cliente acquisito o potenziale.
-                                Gestione documentale e informativa di preventivi, ordini, DDT, fatture, ma anche tenuta
-                                e manutenzione dei listini, delle promozioni e delle eventuali provvigioni per gli
-                                agenti di vendita.
-                                Tutti gli aspetti sopracitati si traducono in termini di fatturazione elettronica in
-                                maniera agile, intelligente e completamente integrata all’interno del programma, sia per
-                                il ciclo passivo che per il ciclo attivo documentale.
+                                Gestire il ciclo degli acquisti in termini di approvvigionamento di materiali e servizi
+                                dai fornitori e relativo ciclo documentale. Governare tutte le attività aziendali che
+                                hanno come controparte il cliente acquisito o potenziale. Gestione documentale e
+                                informativa di preventivi, ordini, DDT, fatture, tenuta e manutenzione dei listini,
+                                promozioni ed eventuali provvigioni per gli agenti di vendita.
 
                             </p>
                         </div>
                     </div>
                     <!-- End Single Item -->
+
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
                         <div class="item">
                             <i class="flaticon-intersection"></i>
-                            <h5>Archiviazione Documentale</h5>
+                            <h5>Fatturazione Elettronica</h5>
                             <p>
-                                Archiviare tramite un sistema di catalogazione di tutti i documenti tramite una comoda
-                                funzione di ricerca al fine di visualizzare tutti i documenti allegati senza doverli
-                                cercare negli archivi cartacei o nel proprio computer
+                                Il ciclo documentale, sia passivo che attivo, si traduce in termini di fatturazione
+                                elettronica in maniera agile, intelligente e completamente integrata all’interno del
+                                programma. Si potranno importare le fatture di acquisto elettroniche direttamente in
+                                contabilità con pochi click e allo stesso modo inviare le fatture di vendita allo SDI.
                             </p>
                         </div>
                     </div>
                     <!-- End Single Item -->
+
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
                         <div class="item">
@@ -257,6 +251,23 @@
                         </div>
                     </div>
                     <!-- End Single Item -->
+
+                    <!-- Single Item -->
+                    <div class="col-lg-3 col-md-6 single-item">
+                        <div class="item">
+                            <i class="flaticon-feature"></i>
+                            <h5>Finanza, tesoreria e controllo</h5>
+                            <p>
+                                Avere evidenza delle scadenze di pagamento, incassi, insoluti, rischi credito, così da
+                                ottenere un sano bilanciamento dei flussi di cassa. Gestire i rapporti con le banche in
+                                termini di fido, RI.BA. e bonifici. Tenere traccia delle disponibilità finanziarie e
+                                delle linee di finanziamento attuali e future.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+
+
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
                         <div class="item">
@@ -271,19 +282,7 @@
                         </div>
                     </div>
                     <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-lg-3 col-md-6 single-item">
-                        <div class="item">
-                            <i class="flaticon-conversation"></i>
-                            <h5>Controllo di Gestione</h5>
-                            <p>
-                                Controllare in maniera continuativa l’andamento dei ricavi, costi e marginalità al fine
-                                di verificare il conseguimento degli obiettivi pianificati, evidenziare eventuali
-                                scostamenti e orientare le relative decisioni
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
+
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
                         <div class="item">
@@ -295,6 +294,20 @@
                                 e assistenza post-vendita. Gestire i processi e le attività che richiedono prese in
                                 carico di gestioni, passaggi di informazioni e controllo, al fine di evitare errori e
                                 dimenticanze che impattano negativamente sull’andamento aziendale.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+
+                    <!-- Single Item -->
+                    <div class="col-lg-3 col-md-6 single-item">
+                        <div class="item">
+                            <i class="flaticon-intersection"></i>
+                            <h5>Archiviazione Documentale</h5>
+                            <p>
+                                Archiviare tramite un sistema di catalogazione di tutti i documenti tramite una comoda
+                                funzione di ricerca al fine di visualizzare tutti i documenti allegati senza doverli
+                                cercare negli archivi cartacei o nel proprio computer
                             </p>
                         </div>
                     </div>
@@ -320,7 +333,7 @@
                     <div class="col-lg-6 info">
                         <h2>Ti aiutiamo a costruire <br> il Tuo Arca Evolution</h2>
                         <p>
-                            Oltre all’ampissima scelta tra le varie funzionalità, per le necessità più particolari,
+                            Oltre all’ampia scelta tra le varie funzionalità, per le necessità più particolari,
                             vantiamo la possibilità di aggiungere personalizzazioni al programma, grazie proprio alla
                             versatilità ed elasticità del linguaggio di programmazione di Arca Evolution.
                         </p>
@@ -357,12 +370,14 @@
                 </div>
                 <div class="col-lg-8 clients">
                     <div class="clients-items owl-carousel owl-theme text-center">
-                        <div class="single-item"><img src="assets/img/arca/clienti/ocanera.jpg" alt="Clients"></div>
                         <div class="single-item"><img src="assets/img/arca/clienti/angelucci.jpg" alt="Clients"></div>
+                        <div class="single-item"><img src="assets/img/arca/clienti/consultprogett.jpg" alt="Clients">
+                        </div>
                         <div class="single-item"><img src="assets/img/arca/clienti/aross.png" alt="Clients"></div>
                         <div class="single-item"><img src="assets/img/arca/clienti/braid.png" alt="Clients"></div>
                         <div class="single-item"><img src="assets/img/arca/clienti/corsetti.png" alt="Clients"></div>
                         <div class="single-item"><img src="assets/img/arca/clienti/dignani.png" alt="Clients"></div>
+                        <div class="single-item"><img src="assets/img/arca/clienti/ocanera.jpg" alt="Clients"></div>
                         <div class="single-item"><img src="assets/img/arca/clienti/dinamicaSpurghi.png" alt="Clients">
                         </div>
                         <div class="single-item"><img src="assets/img/arca/clienti/fioretti.jpg" alt="Clients"></div>
