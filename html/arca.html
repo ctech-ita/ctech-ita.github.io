@@ -20,6 +20,11 @@
         text-align: justify;
     }
 
+    .works-process-items .item .icon span {
+        color: black;
+        right: -40px;
+    }
+
     #arca-logo {
         height: 1.9em;
     }
@@ -27,6 +32,50 @@
     .companies-area {
         padding-top: 50px;
         padding-bottom: 50px
+    }
+
+    .choseus-items .company-logo {
+        margin-top: 25px
+    }
+
+    .img-icon::before {
+        background-size: 60px;
+        height: 60px;
+        width: 60px;
+        content: "";
+        display: block
+    }
+
+    .img-icon-contabilita::before {
+        background-image: url(assets/img/icon/contabilita.png);
+    }
+
+    .img-icon-acquisti::before {
+        background-image: url(assets/img/icon/contabilita.png);
+    }
+
+    .img-icon-fatturazione::before {
+        background-image: url(assets/img/icon/fatturazione.png);
+    }
+
+    .img-icon-magazzino::before {
+        background-image: url(assets/img/icon/magazzino.png);
+    }
+
+    .img-icon-finanza::before {
+        background-image: url(assets/img/icon/finanza.png);
+    }
+
+    .img-icon-produzione::before {
+        background-image: url(assets/img/icon/produzione.png);
+    }
+
+    .img-icon-crm::before {
+        background-image: url(assets/img/icon/crm.png);
+    }
+
+    .img-icon-archiviazione::before {
+        background-image: url(assets/img/icon/archiviazione.png);
     }
 </style>
 
@@ -95,7 +144,7 @@
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
                         <div class="item">
-                            <i class="flaticon-scroll"></i>
+                            <i class="img-icon img-icon-contabilita"></i>
                             <h5>Contabilità e adempimenti</h5>
                             <p>
                                 Gestire le operazioni contabili e fiscali, come scritture di prima nota, Libro Giornale,
@@ -109,7 +158,7 @@
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
                         <div class="item">
-                            <i class="flaticon-intersect"></i>
+                            <i class="img-icon img-icon-acquisti"></i>
                             <h5>Gestione Acquisti e Vendite</h5>
                             <p>
                                 Gestire il ciclo degli acquisti in termini di approvvigionamento di materiali e servizi
@@ -126,7 +175,7 @@
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
                         <div class="item">
-                            <i class="flaticon-intersection"></i>
+                            <i class="img-icon img-icon-fatturazione"></i>
                             <h5>Fatturazione Elettronica</h5>
                             <p>
                                 Il ciclo documentale, sia passivo che attivo, si traduce in termini di fatturazione
@@ -141,7 +190,7 @@
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
                         <div class="item">
-                            <i class="flaticon-resolution"></i>
+                            <i class="img-icon img-icon-magazzino"></i>
                             <h5>Magazzino e Logistica</h5>
                             <p>
                                 Gestire il magazzino significa assicurare la continuità tra gli acquisti e i processi
@@ -156,7 +205,7 @@
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
                         <div class="item">
-                            <i class="flaticon-feature"></i>
+                            <i class="img-icon img-icon-finanza"></i>
                             <h5>Finanza, tesoreria e controllo</h5>
                             <p>
                                 Avere evidenza delle scadenze di pagamento, incassi, insoluti, rischi credito, così da
@@ -172,7 +221,7 @@
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
                         <div class="item">
-                            <i class="flaticon-showcase"></i>
+                            <i class="img-icon img-icon-produzione"></i>
                             <h5>Gestione della produzione</h5>
                             <p>
                                 Realizzare quanto richiesto dai clienti e dal mercato significa, su diversi livelli di
@@ -187,7 +236,7 @@
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
                         <div class="item">
-                            <i class="flaticon-customer-support"></i>
+                            <i class="img-icon img-icon-crm"></i>
                             <h5>Gestione Processi CRM</h5>
                             <p>
                                 Gestire efficacemente le azioni e le informazioni legate non solo ai clienti ma anche ai
@@ -203,7 +252,7 @@
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
                         <div class="item">
-                            <i class="flaticon-intersection"></i>
+                            <i class="img-icon img-icon-archiviazione"></i>
                             <h5>Archiviazione Documentale</h5>
                             <p>
                                 Archiviare tramite un sistema di catalogazione di tutti i documenti tramite una comoda
@@ -238,17 +287,21 @@
                             vantiamo la possibilità di aggiungere personalizzazioni al programma, grazie proprio alla
                             versatilità ed elasticità del linguaggio di programmazione di Arca Evolution.
                         </p>
-                        <ul>
-                            <li>Efficiente</li>
-                            <li>Intuitivo</li>
-                            <li>Versatile</li>
-                        </ul>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 item">
+                                <ul>
+                                    <li>Efficiente</li>
+                                    <li>Intuitivo</li>
+                                    <li>Versatile</li>
+                                </ul>
                                 <div class="fun-fact">
                                     <div class="timer" data-to="100" data-speed="1000"></div>
                                     <span class="medium">Clienti Soddisfatti</span>
                                 </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 item text-center company-logo">
+                                <img src="assets/img/arca/logoarca2.png" height="100">
+                                <p><i>Arca Evolution è un prodotto Wolters Kluwer</i></p>
                             </div>
                         </div>
                     </div>
@@ -319,7 +372,7 @@
                     <div class="col-lg-4 single-item">
                         <div class="item">
                             <div class="icon">
-                                <i class="fas fa-chess"></i>
+                                <img src="assets/img/icon/discussione.png" height="120" />
                                 <span>01</span>
                             </div>
                             <div class="info">
@@ -338,7 +391,7 @@
                     <div class="col-lg-4 single-item">
                         <div class="item">
                             <div class="icon">
-                                <i class="fas fa-bong"></i>
+                                <img src="assets/img/icon/implementazione.png" height="120" />
                                 <span>02</span>
                             </div>
                             <div class="info">
@@ -358,7 +411,7 @@
                     <div class="col-lg-4 single-item">
                         <div class="item">
                             <div class="icon">
-                                <i class="fas fa-copy"></i>
+                                <img src="assets/img/icon/assistenza.png" height="120" />
                                 <span>03</span>
                             </div>
                             <div class="info">
