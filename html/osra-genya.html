@@ -3,6 +3,44 @@
 
 <module href="/components/head.html"></module>
 
+<style>
+    .banner-area.normal-text .content a.normal-link {
+        margin-top: 0;
+        text-decoration: underline;
+    }
+
+    strong {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+    }
+
+    #genya-logo {
+        height: 1.9em;
+    }
+
+    .video-play-button {
+        margin-top: 0;
+        background-color: gray;
+    }
+
+    .video-play-button::before {
+        background-color: gray;
+    }
+
+    .video-play-button::after {
+        background-color: gray;
+    }
+
+    .item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .overview-area .overview-carousel .owl-nav {
+        display: none;
+    }
+</style>
+
 <body>
 
 
@@ -13,84 +51,137 @@
 
     <!-- Start Banner 
     ============================================= -->
-    <div class="banner-area top-shape text-dark inc-video auto-height text-center bg-gradient small-text">
+    <div class="banner-area content-double shape-line bg-theme-small normal-text">
         <div class="box-table">
             <div class="box-cell">
                 <div class="container">
                     <div class="double-items">
-                        <div class="row">
-                            <div class="col-lg-8 offset-lg-2">
+                        <div class="row align-center">
+                            <div class="col-lg-5 left-info simple-video">
                                 <div class="content" data-animation="animated fadeInUpBig">
-                                    <h1>We're building <span>software</span> for your business</h1>
+                                    <h1><img src="assets/img/genya/logo-genya.png" id="genya-logo" />: Per restare
+                                        competitivi sul mercato e aumentare i servizi
+                                        offerti.
+                                    </h1>
                                     <p>
-                                        Celebrated delightful an especially increasing instrument am. Indulgence
-                                        contrasted sufficient to unpleasant in in insensible favourable. Latter remark
-                                        hunted enough vulgar say man. Sitting hearted on it without me.
+                                        Genya è il <strong>software in cloud</strong> che consente di gestire attività
+                                        contabili e fiscali con un'unica applicazione e avere <strong>più tempo</strong>
+                                        da dedicare <strong>alla consulenza strategica ai clienti.</strong>
+
+                                        Guarda su Youtube tutti i <a class="normal-link"
+                                            href="https://www.youtube.com/watch?v=yYu5cEEoAis&list=PL6F-29uQHMv5kueVDho3Lbjijceyfr99t&index=7"
+                                            target="blank">video dimostrativi su Genya</a> e gli altri software per il
+                                        tuo Studio.
+
                                     </p>
-                                    <a class="popup-youtube relative light video-play-button"
-                                        href="https://www.youtube.com/watch?v=owhuBrGIOsE">
-                                        <i class="fa fa-play"></i>
-                                    </a>
+                                    <a class="btn circle btn-theme border btn-md" target="blank"
+                                        href="assets/attachments/brochure-genya.pdf">Scarica la Brochure</a>
                                 </div>
                             </div>
-                            <div class="col-lg-8 offset-lg-2">
-                                <div class="banner">
-                                    <img src="assets/img/800x600.png" alt="Thumb">
-                                </div>
+                            <div class="col-lg-7 right-info">
+                                <img src="assets/img/genya/video-preview.jpg" alt="Thumb">
+                                <a class="popup-youtube video-play-button"
+                                    href="https://www.youtube.com/watch?v=Ug2fEjIq_I8">
+                                    <i class="fa fa-play"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="shape-bg">
-                    <img src="assets/img/shape/1.svg" alt="Shape">
+                <div class="wavesshape">
+                    <img src="assets/img/waves-shape.svg" alt="Shape">
                 </div>
             </div>
         </div>
     </div>
     <!-- End Banner -->
 
-    <!-- Start Why Chose Us 
+    <!-- Start About 
     ============================================= -->
-    <div id="choseus" class="choseus-area default-padding-top">
+    <div id="about" class="about-area default-padding">
         <div class="container">
-            <div class="choseus-items">
-                <div class="row">
-                    <div class="col-lg-6 thumb">
-                        <img src="assets/img/illustration/1.png" alt="Thumb">
-                    </div>
-                    <div class="col-lg-6 info">
-                        <h2>Create your app page <br>with expert developer</h2>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo doloremque repellendus,
-                            excepturi amet in sed dignissimos sint ipsa ad deserunt et accusantium, veniam, ipsum magnam
-                            enim fugiat distinctio ducimus dolores.
-                        </p>
+            <div class="row">
+                <div class="col-lg-6 default info">
+                    <!-- <h4>Story about us</h4> -->
+                    <h2>La soluzione Genya integra evoluti strumenti di business intelligence e di collaboration alle
+                        classiche funzionalità legate agli adempimenti.</h2>
+                    <p>
+                        Grazie agli strumenti d’importazione guidata, tutti i dati contabili possono essere acquisiti e
+                        automaticamente mappati, consentendo così all’utente di produrre risultati ancora più
+                        velocemente. Più velocità anche nella comunicazione con i clienti grazie alla possibilità di
+                        condividere file, messaggi e dati.
+                    </p>
+                    <div class="bottom-info">
+                        <h3>Perchè Genya</h3>
                         <ul>
-                            <li>Cultivated an up solicitude mr unpleasant. </li>
-                            <li>Improved own provided blessing</li>
-                            <li>Moment led family.</li>
-                            <li>Opinions property the supplied. </li>
+                            <li>
+                                <i class="fas fa-check"></i> <span><strong>Velocità ed Intuitività:</strong> Un bilancio
+                                    guidato in 30
+                                    minuti senza dover ricorrere alle istruzioni.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> <span><strong>Controllo:</strong> Monitorare le performance
+                                    di business dei
+                                    clienti e del lavoro svolto per loro in tempo reale.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> <span><strong>Mobilità:</strong> Accedere all'applicazione
+                                    da qualunque
+                                    luogo e mediante qualsiasi dispositivo.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> <span><strong>Community:</strong> Mantenere il contatto con
+                                    tutti i clienti
+                                    e interagire con loro con efficacia, fidelizzandoli.</span>
+                            </li>
                         </ul>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 item">
-                                <div class="fun-fact">
-                                    <div class="timer" data-to="230" data-speed="5000"></div>
-                                    <span class="medium">Satisfied customers</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 services-info">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <a target="blank" href="assets/attachments/brochure-genya-webdesk.pdf">
+                                <div class="item">
+                                    <img src="assets/img/genya/icon-webdesk.png" />
+                                    <h4>WEBDESK</h4>
+                                    <p>
+                                        Il portale di comunicazione tra lo studio e i propri clienti per la
+                                        semplificazione nel lavoro di ogni giorno.
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 item">
-                                <div class="fun-fact">
-                                    <div class="timer" data-to="89" data-speed="5000"></div>
-                                    <span class="medium">Professional agents</span>
-                                </div>
-                            </div>
+                            </a>
                         </div>
+                        <div class="col-lg-6 col-md-6">
+                            <a target="blank" href="assets/attachments/brochure-genya-fatture.pdf">
+                                <div class="item">
+                                    <img src="assets/img/genya/icon-fatture.png" />
+                                    <h4>Fattura Smart</h4>
+                                    <p>
+                                        Gestisci tutto il processo della fatturazione elettronica e tienilo sotto
+                                        controllo, da qualsiasi dispositivo.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <a target="blank" href="assets/attachments/brochure-genya-bilancio.pdf">
+                                <div class="item">
+                                    <img src="assets/img/genya/icon-bilancio.png" />
+                                    <h4>Genya Bilancio</h4>
+                                    <p>
+                                        Genya Bilancio è la soluzione in cloud che ti permette di andare oltre
+                                        l'adempimento.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Why Us -->
+    <!-- End About -->
 
     <!-- Start Overview 
     ============================================= -->
@@ -99,275 +190,22 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h2>Quick Software Overview</h2>
-                        <p>
-                            Learning day desirous informed expenses material returned six the. She enabled invited
-                            exposed him another. Reasonably conviction solicitude me mr at discretion reasonable. Age
-                            out full gate bed day lose.
-                        </p>
+                        <h2>Anteprima del Software</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-10 offset-lg-1 text-center overview-items">
-                    <!-- Tab Nav -->
-                    <ul id="tabs" class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a href="" data-target="#tab1" data-toggle="tab" class="active nav-link">
-                                <i class="flaticon-test"></i>
-                                Collaboration
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" data-target="#tab2" data-toggle="tab" class="nav-link">
-                                <i class="flaticon-heart"></i>
-                                Technology
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" data-target="#tab3" data-toggle="tab" class="nav-link">
-                                <i class="flaticon-dental-checkup"></i>
-                                Customize
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- End Tab Nav -->
-
-                    <!-- Start Tab Content -->
-                    <div id="tabsContent" class="tab-content">
-                        <div id="tab1" class="tab-pane fade active show">
-                            <img src="assets/img/1500x700.png" alt="Thumb">
-                        </div>
-                        <div id="tab2" class="tab-pane fade">
-                            <img src="assets/img/1500x700.png" alt="Thumb">
-                        </div>
-                        <div id="tab3" class="tab-pane fade">
-                            <img src="assets/img/1500x700.png" alt="Thumb">
-                        </div>
+                <div class="col-lg-12 col-md-12 text-center overview-items">
+                    <div class="overview-carousel owl-carousel owl-theme">
+                        <img src="assets/img/genya/Anteprima1.png" alt="Thumb">
+                        <img src="assets/img/genya/Anteprima2.png" alt="Thumb">
+                        <img src="assets/img/genya/Anteprima3.png" alt="Thumb">
                     </div>
-                    <!-- End Tab Content -->
                 </div>
             </div>
         </div>
     </div>
     <!-- End Overview -->
-
-    <!-- Start Blog  
-    ============================================= -->
-    <div id="blog" class="blog-area bg-gray default-padding bottom-less">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h2>Latest News</h2>
-                        <p>
-                            Learning day desirous informed expenses material returned six the. She enabled invited
-                            exposed him another. Reasonably conviction solicitude me mr at discretion reasonable. Age
-                            out full gate bed day lose.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="blog-items">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="single.html">
-                                    <img src="assets/img/800x600.png" alt="Thumb">
-                                    <div class="post-type">
-                                        <i class="fas fa-image"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <h4>
-                                    <a href="single.html">Believe has request not how comfort</a>
-                                </h4>
-                                <div class="meta">
-                                    <ul>
-                                        <li><a href="#"><i class="fas fa-calendar-alt "></i> 12 Nov, 2018</a></li>
-                                        <li><a href="#"><i class="fas fa-user"></i> User</a></li>
-                                        <li><a href="#"><i class="fas fa-comments"></i> 23</a></li>
-                                    </ul>
-                                </div>
-                                <p>
-                                    Always polite moment on is warmth spirit it to hearts. Downs those still witty an
-                                    balls so chief so. Moment an little remain
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="single.html">
-                                    <img src="assets/img/800x600.png" alt="Thumb">
-                                    <div class="post-type">
-                                        <i class="fas fa-video"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <h4>
-                                    <a href="single.html">Speaking replying mistress him numerous</a>
-                                </h4>
-                                <div class="meta">
-                                    <ul>
-                                        <li><a href="#"><i class="fas fa-calendar-alt "></i> 09 Nov, 2018</a></li>
-                                        <li><a href="#"><i class="fas fa-user"></i> User</a></li>
-                                        <li><a href="#"><i class="fas fa-comments"></i> 47</a></li>
-                                    </ul>
-                                </div>
-                                <p>
-                                    Always polite moment on is warmth spirit it to hearts. Downs those still witty an
-                                    balls so chief so. Moment an little remain
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="single.html">
-                                    <img src="assets/img/800x600.png" alt="Thumb">
-                                    <div class="post-type">
-                                        <i class="fas fa-images"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <h4>
-                                    <a href="single.html">Reasonably conviction solicitude</a>
-                                </h4>
-                                <div class="meta">
-                                    <ul>
-                                        <li><a href="#"><i class="fas fa-calendar-alt "></i> 16 Nov, 2018</a></li>
-                                        <li><a href="#"><i class="fas fa-user"></i> User</a></li>
-                                        <li><a href="#"><i class="fas fa-comments"></i> 58</a></li>
-                                    </ul>
-                                </div>
-                                <p>
-                                    Always polite moment on is warmth spirit it to hearts. Downs those still witty an
-                                    balls so chief so. Moment an little remain
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Blog -->
-
-    <!-- Start Contact Area  
-    ============================================= -->
-    <div id="contact" class="contact-us-area default-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h2>Contact Us</h2>
-                        <p>
-                            Learning day desirous informed expenses material returned six the. She enabled invited
-                            exposed him another. Reasonably conviction solicitude me mr at discretion reasonable. Age
-                            out full gate bed day lose.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 address">
-                    <div class="address-items">
-                        <h4>Our Office Address</h4>
-                        <ul class="info">
-                            <li>
-                                <i class="fas fa-map-marked-alt"></i>
-                                <span>22 Baker Street,<br> London, United Kingdom,<br> W1U 3BW</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-phone"></i>
-                                <span>+44-20-7328-4499</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope-open"></i>
-                                <span>info@yourdomain.com</span>
-                            </li>
-                        </ul>
-                        <h4>Social Address</h4>
-                        <ul class="social">
-                            <li class="facebook">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            </li>
-                            <li class="twitter">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li class="pinterest">
-                                <a href="#"><i class="fab fa-pinterest"></i></a>
-                            </li>
-                            <li class="instagram">
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </li>
-                        </ul>
-                        <div class="google-maps">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 contact-form">
-                    <h2>Let's lalk about your idea</h2>
-                    <form action="assets/mail/contact.php" method="POST" class="contact-form">
-                        <div class="col-lg-12">
-                            <div class="row">
-                                <div class="form-group">
-                                    <input class="form-control" id="name" name="name" placeholder="Name" type="text">
-                                    <span class="alert-error"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="row">
-                                <div class="form-group">
-                                    <input class="form-control" id="email" name="email" placeholder="Email*"
-                                        type="email">
-                                    <span class="alert-error"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="row">
-                                <div class="form-group">
-                                    <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
-                                    <span class="alert-error"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="row">
-                                <div class="form-group comments">
-                                    <textarea class="form-control" id="comments" name="comments"
-                                        placeholder="Tell Us About Project *"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="row">
-                                <button type="submit" name="submit" id="submit">
-                                    Send Message <i class="fa fa-paper-plane"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Alert Message -->
-                        <div class="col-lg-12 alert-notification">
-                            <div id="message" class="alert-msg"></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Contact -->
 
     <module href="/components/footer.html"></module>
 
