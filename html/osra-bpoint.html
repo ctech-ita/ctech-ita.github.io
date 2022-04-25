@@ -17,9 +17,23 @@
             text-transform: none;
         }
 
+        .info p {
+            font-size: 18px;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .item img {
             width: 80px;
             height: 80px;
+        }
+
+        .item p {
+            text-align: justify;
         }
 
         .about-area .services-info {
@@ -28,6 +42,11 @@
 
         .about-area .services-info .item {
             height: 90%;
+        }
+
+        .logo-info img {
+            width: 300px;
+            margin-bottom: 10px;
         }
     </style>
 
@@ -46,8 +65,10 @@
                         <div class="row align-center">
                             <div class="col-lg-5 left-info simple-video">
                                 <div class="content" data-animation="animated fadeInUpBig">
-                                    <h1>Bpoint Solution Platform</h1>
-                                    <p>
+                                    <div class="text-center">
+                                        <h1>Bpoint Solution Platform</h1>
+                                    </div>
+                                    <p style="text-align: justify">
                                         Lo Studio al centro: la piattaforma unica con tutte le soluzioni per lo Studio
                                         professionale. La soluzione pensata per migliorare l’operatività e la
                                         comunicazione con i clienti: uno strumento in grado di guidare il lavoro
@@ -78,13 +99,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 default info">
-                    <h2>BPoint Fiscale </h2>
+                    <h1>BPoint Fiscale </h1>
                     <p>
                         <strong>La soluzione storica che fornisce a più di 8000 studi
                             professionali l’affidabilità e la solidità per garantire l’efficienza operativa.</strong>
-                        <a class="btn circle btn-theme border btn-md" href="assets/attachments/brochure-bpoint.pdf"
-                            style="margin-top:20px" target="blank">Richiedi Informazioni</a>
                     </p>
+                    <a class="btn circle btn-theme border btn-md" href="assets/attachments/brochure-bpoint.pdf"
+                        style="margin-top:20px" target="blank">Richiedi Informazioni</a>
                     <div class="bottom-info">
                         <h3>Perchè BPoint</h3>
                         <ul>
@@ -162,10 +183,232 @@
 
                     </div>
                 </div>
+                <div class="row logo-info">
+                    <div class="offset-lg-1 col-lg-4">
+                        <img src="assets/img/bpoint/logo.png">
+                        <p>I prodotti citati sono di proprietà Wolters Kluwer. Wolters Kluwer è leader a livello globale
+                            nelle soluzioni e nei servizi per il mercato legale, fiscale, finanziario e healthcare.
+                            Professionisti in tutto il mondo possono contare su soluzioni di informazione e software
+                            sviluppate per gestire al meglio il proprio business, in un contesto sempre più dinamico.
+                            Con 183 anni di storia alle spalle, Wolters Kluwer rende disponibile sul mercato un
+                            portafoglio prodotti che supporta ogni giorno migliaia di clienti in tutto il mondo, tra cui
+                            il 93% delle aziende Fortune 500.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- End About -->
+
+    <!-- Start Blog  
+    ============================================= -->
+    <div id="blog" class="blog-area bg-gray default-padding bottom-less">
+        <div class="container">
+            <!-- <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h2>Latest News</h2>
+                        <p>
+                            Learning day desirous informed expenses material returned six the. She enabled invited
+                            exposed him another. Reasonably conviction solicitude me mr at discretion reasonable. Age
+                            out full gate bed day lose.
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="blog-items">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a
+                                    href="https://www.youtube.com/watch?v=o4ma6lHGecQ&list=PL6F-29uQHMv5kueVDho3Lbjijceyfr99t&index=6">
+                                    <img src="assets/img/800x600.png" alt="Thumb">
+                                    <div class="post-type">
+                                        <i class="fas fa-video"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <h4>
+                                    <a
+                                        href="https://www.youtube.com/watch?v=o4ma6lHGecQ&list=PL6F-29uQHMv5kueVDho3Lbjijceyfr99t&index=6">
+                                        Con Te B.Point Edition – Estrazione Dati Verso Excel</a>
+                                </h4>
+                                <div class="meta">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-calendar-alt "></i> 12 Nov, 2018</a></li>
+                                        <li><a href="#"><i class="fas fa-user"></i> User</a></li>
+                                        <li><a href="#"><i class="fas fa-comments"></i> 23</a></li>
+                                    </ul>
+                                </div>
+                                <p>
+                                    Scopri alcune funzionalità di BPoint, il programma che semplifica e premia il tuo
+                                    lavoro!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="single.html">
+                                    <img src="assets/img/800x600.png" alt="Thumb">
+                                    <div class="post-type">
+                                        <i class="fas fa-video"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <h4>
+                                    <a
+                                        href="https://www.youtube.com/watch?v=HiojZOIj_kw&list=PL6F-29uQHMv5kueVDho3Lbjijceyfr99t&index=7">
+                                        Te B.Point Edition – Manutenzione Prima Nota Smart</a>
+                                </h4>
+                                <div class="meta">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-calendar-alt "></i> 09 Nov, 2018</a></li>
+                                        <li><a href="#"><i class="fas fa-user"></i> User</a></li>
+                                        <li><a href="#"><i class="fas fa-comments"></i> 47</a></li>
+                                    </ul>
+                                </div>
+                                <p>
+                                    Scopri alcune funzionalità di BPoint, il programma che semplifica e premia il tuo
+                                    lavoro!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="single.html">
+                                    <img src="assets/img/800x600.png" alt="Thumb">
+                                    <div class="post-type">
+                                        <i class="fas fa-images"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <h4>
+                                    <a
+                                        href="https://www.youtube.com/watch?v=jt4H8MJj0bI&list=PL6F-29uQHMv5kueVDho3Lbjijceyfr99t&index=24">Fattura
+                                        Smart</a>
+                                </h4>
+                                <div class="meta">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-calendar-alt "></i> 16 Nov, 2018</a></li>
+                                        <li><a href="#"><i class="fas fa-user"></i> User</a></li>
+                                        <li><a href="#"><i class="fas fa-comments"></i> 58</a></li>
+                                    </ul>
+                                </div>
+                                <p>
+                                    La soluzione dedicata alle piccole imprese, ditte individuali, forfettari per
+                                    gestire il processo di fatturazione elettronica, sia attiva che passiva, in maniera
+                                    semplice, automatizzata, completa ed integrata.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Row -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a
+                                    href="https://www.youtube.com/watch?v=o4ma6lHGecQ&list=PL6F-29uQHMv5kueVDho3Lbjijceyfr99t&index=6">
+                                    <img src="assets/img/800x600.png" alt="Thumb">
+                                    <div class="post-type">
+                                        <i class="fas fa-video"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <h4>
+                                    <a
+                                        href="https://www.youtube.com/watch?v=ZY-HvEn4RGI&list=PL6F-29uQHMv5kueVDho3Lbjijceyfr99t&index=25">Webdesk</a>
+                                </h4>
+                                <div class="meta">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-calendar-alt "></i> 12 Nov, 2018</a></li>
+                                        <li><a href="#"><i class="fas fa-user"></i> User</a></li>
+                                        <li><a href="#"><i class="fas fa-comments"></i> 23</a></li>
+                                    </ul>
+                                </div>
+                                <p>
+                                    Fatturazione Elettronica: collaborazione tra studio e il cliente. Dal portale di
+                                    collaborazione alla consegna delle fatture di acquisto/ vendita, fino alla gestione
+                                    dell'intero processo di fatturazione.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="single.html">
+                                    <img src="assets/img/800x600.png" alt="Thumb">
+                                    <div class="post-type">
+                                        <i class="fas fa-video"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <h4>
+                                    <a
+                                        href="https://www.youtube.com/watch?v=yYu5cEEoAis&list=PL6F-29uQHMv5kueVDho3Lbjijceyfr99t&index=8">
+                                        Genya – Gli strumenti distintivi della soluzione</a>
+                                </h4>
+                                <div class="meta">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-calendar-alt "></i> 09 Nov, 2018</a></li>
+                                        <li><a href="#"><i class="fas fa-user"></i> User</a></li>
+                                        <li><a href="#"><i class="fas fa-comments"></i> 47</a></li>
+                                    </ul>
+                                </div>
+                                <p>
+                                    CRM - KPI - Analisi dei tempi - Monitoraggio scadenze - Flussi di alvoro -
+                                    Avanzamenti massive - Archiviazione e condivisione documenti.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="single.html">
+                                    <img src="assets/img/800x600.png" alt="Thumb">
+                                    <div class="post-type">
+                                        <i class="fas fa-images"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <h4>
+                                    <a
+                                        href="https://www.youtube.com/watch?v=VbIpJmu70d0&list=PL6F-29uQHMv5kueVDho3Lbjijceyfr99t&index=20">Genya
+                                        Bilancio </a>
+                                </h4>
+                                <div class="meta">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-calendar-alt "></i> 16 Nov, 2018</a></li>
+                                        <li><a href="#"><i class="fas fa-user"></i> User</a></li>
+                                        <li><a href="#"><i class="fas fa-comments"></i> 58</a></li>
+                                    </ul>
+                                </div>
+                                <p>
+                                    Efficaci strumenti di gestione per offrire il massimo del valore e del servizio.
+                                    Liberare tempo, ampliare e qualificare i servizi per acquisire nuovi clienti!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Blog -->
 
 
     <module href="/components/footer.html"></module>
