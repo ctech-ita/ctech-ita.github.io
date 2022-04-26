@@ -13,12 +13,24 @@
             margin-bottom: 0;
         }
 
+        .about-area .services-info .item p {
+            margin-top: 10px;
+        }
+
         .about-area .bottom-info li span {
             text-transform: none;
         }
 
         .info p {
-            font-size: 18px;
+            font-size: 17px;
+        }
+
+        .banner-area .simple-video a {
+            float: none;
+        }
+
+        .content p {
+            text-align: justify;
         }
 
         .item {
@@ -36,6 +48,15 @@
             text-align: justify;
         }
 
+        .about-area h1 {
+            font-size: 45px;
+            font-weight: 600;
+        }
+
+        .about-area p {
+            text-align: justify;
+        }
+
         .about-area .services-info {
             margin-top: 0;
         }
@@ -45,8 +66,15 @@
         }
 
         .logo-info img {
-            width: 300px;
+            height: 50px;
+            margin-top: 50px;
             margin-bottom: 10px;
+        }
+
+        .logo-info p {
+            font-size: 10px;
+            line-height: normal;
+            text-align: justify;
         }
     </style>
 
@@ -64,11 +92,9 @@
                     <div class="double-items">
                         <div class="row align-center">
                             <div class="col-lg-5 left-info simple-video">
-                                <div class="content" data-animation="animated fadeInUpBig">
-                                    <div class="text-center">
-                                        <h1>Bpoint Solution Platform</h1>
-                                    </div>
-                                    <p style="text-align: justify">
+                                <div class="content text-center" data-animation="animated fadeInUpBig">
+                                    <h1>Bpoint Solution Platform</h1>
+                                    <p>
                                         Lo Studio al centro: la piattaforma unica con tutte le soluzioni per lo Studio
                                         professionale. La soluzione pensata per migliorare l’operatività e la
                                         comunicazione con i clienti: uno strumento in grado di guidare il lavoro
@@ -104,8 +130,10 @@
                         <strong>La soluzione storica che fornisce a più di 8000 studi
                             professionali l’affidabilità e la solidità per garantire l’efficienza operativa.</strong>
                     </p>
-                    <a class="btn circle btn-theme border btn-md" href="assets/attachments/brochure-bpoint.pdf"
-                        style="margin-top:20px" target="blank">Richiedi Informazioni</a>
+                    <div class="text-center">
+                        <a class="btn circle btn-theme border btn-md" onclick="scrollToContacts()"
+                            style="margin-top:20px" target="blank">Richiedi Informazioni</a>
+                    </div>
                     <div class="bottom-info">
                         <h3>Perchè BPoint</h3>
                         <ul>
@@ -126,6 +154,16 @@
                                     normative e banche dati professionali</span>
                             </li>
                         </ul>
+                    </div>
+                    <div class="row logo-info">
+                        <div class="col-lg-11">
+                            <img src="assets/img/bpoint/logo.png">
+                            <p>I prodotti citati sono di proprietà Wolters Kluwer.
+                                Con 183 anni di storia alle spalle, Wolters Kluwer rende disponibile sul mercato un
+                                portafoglio prodotti che supporta ogni giorno migliaia di clienti in tutto il mondo, tra
+                                cui
+                                il 93% delle aziende Fortune 500.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 services-info">
@@ -182,18 +220,7 @@
                         </div>
 
                     </div>
-                </div>
-                <div class="row logo-info">
-                    <div class="offset-lg-1 col-lg-4">
-                        <img src="assets/img/bpoint/logo.png">
-                        <p>I prodotti citati sono di proprietà Wolters Kluwer. Wolters Kluwer è leader a livello globale
-                            nelle soluzioni e nei servizi per il mercato legale, fiscale, finanziario e healthcare.
-                            Professionisti in tutto il mondo possono contare su soluzioni di informazione e software
-                            sviluppate per gestire al meglio il proprio business, in un contesto sempre più dinamico.
-                            Con 183 anni di storia alle spalle, Wolters Kluwer rende disponibile sul mercato un
-                            portafoglio prodotti che supporta ogni giorno migliaia di clienti in tutto il mondo, tra cui
-                            il 93% delle aziende Fortune 500.</p>
-                    </div>
+
                 </div>
             </div>
         </div>
