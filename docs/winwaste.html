@@ -217,24 +217,35 @@
 
     <!-- Header 
     ============================================= -->
-    <header id="home">
+    <style>
+    @media (min-width: 1023px) {
+        .navbar-header {
+            float: right;
+        }
+
+        #navbar-menu {
+            float: left;
+        }
+    }
+</style>
+
+<header id="home">
 
     <!-- Start Navigation -->
     <nav class="navbar navbar-default navbar-sticky bootsnav on no-full">
 
+        <!-- Start Header Navigation -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" class="logo logo-scrolled" alt="Logo">
+            </a>
+        </div>
+        <!-- End Header Navigation -->
+
         <div class="container">
-
-            <!-- Start Header Navigation -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo.png" class="logo logo-scrolled" alt="Logo">
-                </a>
-            </div>
-            <!-- End Header Navigation -->
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
@@ -244,10 +255,10 @@
                     <li>
                         <a class="smooth-menu" href="index.html">Azienda</a>
                     </li>
-                    <li class="dropdown dropdown-left">
+                    <li class="dropdown dropdown-right">
                         <a href="#home" class="dropdown-toggle smooth-menu" data-toggle="dropdown">Soluzioni</a>
                         <ul class="dropdown-menu">
-                            <li class="dropdown dropdown-left">
+                            <li class="dropdown dropdown-right">
                                 <a href="#home" class="dropdown-toggle smooth-menu" data-toggle="dropdown">Impresa</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="arca.html">Arca Evolution</a></li>
@@ -255,7 +266,7 @@
                                 </ul>
                             </li>
 
-                            <li class="dropdown dropdown-left">
+                            <li class="dropdown dropdown-right">
                                 <a href="#home" class="dropdown-toggle smooth-menu" data-toggle="dropdown">Commercialisti</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="osra-bpoint.html">OSRA - BPoint</a></li>
