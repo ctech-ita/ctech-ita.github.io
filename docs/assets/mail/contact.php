@@ -13,6 +13,7 @@ $name     = $_POST['name'];
 $email    = $_POST['email'];
 $phone     = $_POST['phone'];
 $comments = $_POST['comments'];
+$company = $_POST['company'];
 
 if(trim($name) == '') {
 	echo '<div class="alert alert-error">Devi inserire il tuo nome.</div>';
@@ -24,7 +25,10 @@ if(trim($name) == '') {
 	echo '<div class="alert alert-error">Devi inserire un tuo indirizzo email valido.</div>';
 	exit();
 } else if(trim($phone) == '') {
-	echo '<div class="alert alert-error">Inserisci tutti i campi!</div>';
+	echo '<div class="alert alert-error">Inserisci il tuo numero di telefono!</div>';
+	exit();
+} else if(trim($company) == '') {
+	echo '<div class="alert alert-error">Inserisci la tua azienda!</div>';
 	exit();
 }
 else if(trim($comments) == '') {
@@ -57,7 +61,7 @@ $e_subject = 'Richiesta Informazioni';
 // You can change this if you feel that you need to.
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
-$e_body = "Hai ricevuta una richiesta da $name ($email) ." . PHP_EOL . PHP_EOL;
+$e_body = "Hai ricevuta una richiesta da $name ($company - $email) ." . PHP_EOL . PHP_EOL;
 $e_content = "\"$comments\"" . PHP_EOL . PHP_EOL;
 
 $msg = wordwrap( $e_body . $e_content, 70 );

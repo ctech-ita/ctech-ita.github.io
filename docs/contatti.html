@@ -55,7 +55,11 @@
 
 <body>
 
-
+    <style>
+        .contact-us-area .contact-form h2 {
+            margin-bottom: 10px;
+        }
+    </style>
 
     <!-- Header 
     ============================================= -->
@@ -188,12 +192,21 @@
                     </div>
                 </div>
                 <div class="col-lg-6 contact-form">
-                    <h2>Inviaci una richiesta!</h2>
+                    <h2>Richiedi una consulenza gratuita!</h2>
+                    <h4>Verrai ricontattato entro le prossime 24-48 ore.</h4>
                     <form action="assets/mail/contact.php" method="POST" class="contact-form">
                         <div class="col-lg-12">
                             <div class="row">
                                 <div class="form-group">
-                                    <input class="form-control" id="name" name="name" placeholder="Nome" type="text">
+                                    <input class="form-control" id="name" name="name" placeholder="Nome*" type="text">
+                                    <span class="alert-error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="form-group">
+                                    <input class="form-control" id="company" name="company" placeholder="Azienda*" type="text">
                                     <span class="alert-error"></span>
                                 </div>
                             </div>
@@ -209,7 +222,7 @@
                         <div class="col-lg-12">
                             <div class="row">
                                 <div class="form-group">
-                                    <input class="form-control" id="phone" name="phone" placeholder="Telefono" type="text">
+                                    <input class="form-control" id="phone" name="phone" placeholder="Telefono*" type="text">
                                     <span class="alert-error"></span>
                                 </div>
                             </div>
@@ -217,7 +230,7 @@
                         <div class="col-lg-12">
                             <div class="row">
                                 <div class="form-group comments">
-                                    <textarea class="form-control" id="comments" name="comments" placeholder="Inserisci il tuo messaggio *"></textarea>
+                                    <textarea class="form-control" id="comments" name="comments" placeholder="Quali servizi ti interessano? *"></textarea>
                                 </div>
                             </div>
                         </div>
