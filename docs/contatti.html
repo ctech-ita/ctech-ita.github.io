@@ -271,8 +271,9 @@
 <script src="assets/js/smoothscroll.min.js"></script>
 <script>
     function scrollToContacts() {
-        document.getElementById("contact").scrollIntoView({
-            behavior: "smooth"
+        document.getElementById("footer").scrollIntoView({
+            behavior: "smooth",
+            block: "nearest"
         });
         return false;
     }

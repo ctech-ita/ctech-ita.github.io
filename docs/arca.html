@@ -680,6 +680,10 @@
     <!-- End Overview -->
 
     <style>
+    footer {
+        padding-top: 100px;
+    }
+
     footer .f-item .address li i {
         color: #AB1211;
         background: none;
@@ -689,7 +693,7 @@
         font-size: 30px
     }
 
-    footer .container {
+    #contact {
         border-top: 1px solid #e7e7e7;
         padding-top: 50px;
     }
@@ -706,60 +710,115 @@
     }
 </style>
 
-<footer class="default-padding bg-light">
+<footer class="bg-light" id="footer">
     <div class="container">
-        <div class="f-items" id="contact">
-            <div class="site-heading single text-center">
-                <h2>Contatti</h2>
-            </div>
-            <div class="row">
-
-                <div class="col-lg-6">
-                    <div class="google-maps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.8571524204235!2d13.492721515866782!3d43.27536837913602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132df4e092f004bd%3A0xc02b4ffbc3c49b92!2sComputer&#39;s%20Technology!5e0!3m2!1sen!2sit!4v1640878869249!5m2!1sen!2sit" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div id="contact" class="contact-us-area default-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading text-center">
+                            <h2>Contatti</h2>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-lg-6">
-                    <div class="f-item twitter-widget">
-                        <div class="address">
-                            <ul>
+                <div class="row">
+                    <div class="col-lg-6 address">
+                        <div class="address-items">
+                            <h4>I nostri indirizzi</h4>
+                            <ul class="info">
                                 <li>
-                                    <a href="https://goo.gl/maps/JkLYbmN3LBrjHzpSA" target="_blank">
-                                        <div class="icon">
-                                            <i class="fas fa-home"></i>
-                                        </div>
-                                        <div class="info">
-                                            <h5>Indirizzo:</h5>
-                                            <span>Via Cluentina, 26/B <br>Loc. Piediripa di Macerata (MC)<br>
-                                                62100</span>
-                                        </div>
+                                    <i class="fas fa-map-marked-alt"></i>
+                                    <span>Via Cluentina, 26/B <br>Loc. Piediripa di Macerata (MC)<br>
+                                        62100</span>
+                                </li>
+                                <li>
+                                    <a href="tel:0733281142">
+                                        <i class="fas fa-phone"></i>
+                                        <span>0733.281142 / 292776</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="mailto:info@ctech.it">
-                                        <div class="icon">
-                                            <i class="fas fa-envelope"></i>
-                                        </div>
-                                        <div class="info">
-                                            <h5>Email:</h5>
-                                            <span>info@ctech.it</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tel:0733281142">
-                                        <div class="icon">
-                                            <i class="fas fa-phone"></i>
-                                        </div>
-                                        <div class="info">
-                                            <h5>Telefono:</h5>
-                                            <span>Tel. 0733.281142 / 292776</span>
-                                        </div>
+                                        <i class="fas fa-envelope-open"></i>
+                                        <span>info@ctech.it</span>
                                     </a>
                                 </li>
                             </ul>
+                            <!-- <h4>Social Address</h4>
+                            <ul class="social">
+                                <li class="facebook">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="twitter">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="pinterest">
+                                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="instagram">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul> -->
+                            <div class="google-maps">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.8571524204235!2d13.492721515866782!3d43.27536837913602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132df4e092f004bd%3A0xc02b4ffbc3c49b92!2sComputer&#39;s%20Technology!5e0!3m2!1sen!2sit!4v1640878869249!5m2!1sen!2sit" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
                         </div>
+                    </div>
+                    <div class="col-lg-6 contact-form">
+                        <h2>Richiedi una consulenza gratuita!</h2>
+                        <h4>Verrai ricontattato entro le prossime 24-48 ore.</h4>
+                        <form action="assets/mail/contact.php" method="POST" class="contact-form">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <input class="form-control" id="name" name="name" placeholder="Nome*" type="text">
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <input class="form-control" id="company" name="company" placeholder="Azienda*" type="text">
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <input class="form-control" id="phone" name="phone" placeholder="Telefono*" type="text">
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="form-group comments">
+                                        <textarea class="form-control" id="comments" name="comments" placeholder="Quali servizi ti interessano? *"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <button type="submit" name="submit" id="submit">
+                                        Invia <i class="fa fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Alert Message -->
+                            <div class="col-lg-12 alert-notification">
+                                <div id="message" class="alert-msg"></div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -808,8 +867,9 @@
 <script src="assets/js/smoothscroll.min.js"></script>
 <script>
     function scrollToContacts() {
-        document.getElementById("contact").scrollIntoView({
-            behavior: "smooth"
+        document.getElementById("footer").scrollIntoView({
+            behavior: "smooth",
+            block: "nearest"
         });
         return false;
     }
