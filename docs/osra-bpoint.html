@@ -142,7 +142,7 @@
     <!-- Header 
     ============================================= -->
     <style>
-    @media (min-width: 1023px) {
+    @media only screen and (min-width: 1023px) {
         .navbar-header {
             float: right;
         }
@@ -152,15 +152,21 @@
         }
     }
 
-    @media (max-width: 1023px) {
+    @media only screen and (max-width: 1023px) {
         nav.navbar.bootsnav ul.nav li.dropdown>ul.dropdown-menu li:hover>a {
             color: #AB1211 !important;
             ;
         }
-    }
 
-    nav.navbar.bootsnav ul.nav>li>a:hover {
-        color: #AB1211;
+
+        nav.navbar.bootsnav ul.nav>li>a:hover {
+            color: #AB1211;
+        }
+
+        nav.navbar .navbar-brand img.logo {
+            height: 30px;
+            width: auto;
+        }
     }
 </style>
 
