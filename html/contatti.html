@@ -6,8 +6,36 @@
 <body>
 
     <style>
+        .site-heading h2::before {
+            background: darkgrey none repeat scroll 0 0;
+        }
+
         .contact-us-area .contact-form h2 {
             margin-bottom: 10px;
+        }
+
+        .f-item .address li i {
+            color: #AB1211;
+            background: none;
+        }
+
+        .contact-us-area .address-items .info li i.fas {
+            color: #AB1211;
+        }
+
+        .contact-us-area .contact-form button {
+            background: gray none repeat scroll 0 0
+        }
+
+        .google-maps iframe {
+            width: 450px;
+            height: 300px
+        }
+
+        @media (max-width: 576px) {
+            .google-maps iframe {
+                width: 95vw;
+            }
         }
     </style>
 

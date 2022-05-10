@@ -16,6 +16,14 @@
         cursor: pointer;
     }
 
+    .site-heading h2::before {
+        background: darkgrey none repeat scroll 0 0;
+    }
+
+    .services-area .services-box .item::after {
+        background: darkgrey;
+    }
+
 
     .services-area .services-box .item p {
         text-align: justify;
@@ -65,6 +73,19 @@
         clear: both;
     }
 
+    .btn.btn-light.effect {
+        background-color: darkgray;
+        border: 2px solid darkgray !important;
+        color: #ffffff !important;
+    }
+
+    .btn.btn-light.effect:hover,
+    .btn.btn-light.effect:focus {
+        background: gray;
+        color: #ffffff !important;
+        border: 2px solid gray !important;
+    }
+
     .img-icon::before {
         background-size: 60px;
         height: 60px;
@@ -103,6 +124,14 @@
 
     .img-icon-archiviazione::before {
         background-image: url(assets/img/icon/archiviazione.png);
+    }
+
+    .overview-area .nav-tabs li a {
+        background: #f9f9f9 none repeat scroll 0 0
+    }
+
+    .overview-area .nav-tabs li a.active {
+        background: gray none repeat scroll 0 0;
     }
 </style>
 
@@ -277,7 +306,7 @@
                 </div>
             </div>
             <div class="button text-center">
-                <a class="btn circle btn-theme border btn-md" onclick="scrollToContacts();">Richiedi Informazioni</a>
+                <a class="btn circle btn-light effect btn-md" onclick="scrollToContacts();">Richiedi Informazioni</a>
             </div>
         </div>
     </div>
