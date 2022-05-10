@@ -22,6 +22,7 @@
   <link href="assets/css/bootsnav.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/responsive.css" rel="stylesheet">
+  <link href="assets/css/modalx.css" rel="stylesheet">
   <!-- ========== End Stylesheet ========== -->
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -164,147 +165,6 @@
         background-color: white;
 
     }
-
-    /* ModalX */
-
-    .stop-scrolling {
-        touch-action: none;
-        overscroll-behavior: none;
-        -webkit-overflow-scrolling: auto;
-        overflow: hidden;
-    }
-
-    .modalx {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vw;
-        z-index: 101;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity 0.5s, visibility 0s 0.5s;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        -webkit-transition: opacity 200ms linear;
-        -moz-transition: opacity 200ms linear;
-        -ms-transition: opacity 200ms linear;
-        -o-transition: opacity 200ms linear;
-        transition: opacity 200ms linear;
-    }
-
-    .modalx.active {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .modalx-content-wrapper {
-        opacity: 0;
-        background-color: #f9f9f9;
-        padding: 5%;
-        line-height: 1.3em;
-        font-size: 22px;
-        width: 80%;
-        max-height: 90%;
-        overflow-y: scroll;
-        position: relative;
-
-        -webkit-transition: opacity 400ms linear 400ms;
-        -moz-transition: opacity 400ms linear 400ms;
-        -ms-transition: opacity 400ms linear 400ms;
-        -o-transition: opacity 400ms linear 400ms;
-        transition: opacity 400ms linear 600ms;
-    }
-
-    .modalx.active .modalx-content-wrapper {
-        opacity: 1;
-    }
-
-    .modalx-content-wrapper h2 {
-        font-size: 30px;
-        font-weight: bolder;
-        color: #A6A49C;
-        text-align: center;
-    }
-
-    .modalx button.modal_close {
-        background: #363D4E;
-        border: none;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-        border-radius: 50%;
-        color: #FFFFFF;
-        cursor: pointer;
-        outline: none;
-        width: 52px;
-        height: 52px;
-        position: absolute;
-        right: 30px;
-        top: 30px;
-        -webkit-transition: -webkit-transform 600ms;
-        -moz-transition: -moz-transform 600ms;
-        -ms-transition: -ms-transform 600ms;
-        -o-transition: -o-transform 600ms;
-        transition: transform 600ms;
-    }
-
-    .modalx button.modal_close:hover {
-        background: #3E465A;
-        -webkit-transform: rotate(360deg) scale(1.10);
-        -moz-transform: rotate(360deg) scale(1.10);
-        -ms-transform: rotate(360deg) scale(1.10);
-        -o-transform: rotate(360deg) scale(1.10);
-        transform: rotate(360deg) scale(1.10);
-        -webkit-transition: -webkit-transform 600ms;
-        -moz-transition: -moz-transform 600ms;
-        -ms-transition: -ms-transform 600ms;
-        -o-transition: -o-transform 600ms;
-        transition: transform 600ms;
-    }
-
-    .modalx button.modal_close span,
-    span:before,
-    span:after {
-        background: #FFFFFF;
-        content: '';
-        cursor: pointer;
-        display: block;
-        height: 2px;
-        position: absolute;
-        width: 20px;
-    }
-
-    .modalx button.modal_close span:first-child {
-        background: none;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .modalx button.modal_close span:before {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-
-    .modalx button.modal_close span:after {
-        -webkit-transform: translateY(-2px) rotate(-45deg);
-        -moz-transform: translateY(-2px) rotate(-45deg);
-        -ms-transform: translateY(-2px) rotate(-45deg);
-        -o-transform: translateY(-2px) rotate(-45deg);
-        transform: translateY(-2px) rotate(-45deg);
-        top: 2px;
-    }
 </style>
 
 
@@ -385,7 +245,7 @@
 </header>
     <!-- End Header -->
 
-    <!-- Start Modals -->
+    <!-- Start ModalX -->
     <div class="modalx">
         <div class="modalx-content-wrapper">
             <button role="button" class="modal_close" title="Close"><span></span></button>
@@ -393,7 +253,7 @@
             <span id="modalx-content"></span>
         </div>
     </div>
-    <!-- End Modals -->
+    <!-- End ModalX -->
 
     <!-- Start Banner 
     ============================================= -->
@@ -827,6 +687,7 @@
 <script src="assets/js/bootsnav.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/smoothscroll.min.js"></script>
+<script src="assets/js/modalx.js"></script>
 <script>
     function scrollToContacts() {
         document.getElementById("footer").scrollIntoView({
@@ -835,33 +696,9 @@
         });
         return false;
     }
+
+    initialiseModalX();
 </script>
-
-    <script>
-        $('[data-toggle="modalx"]').click(function (e) {
-            $('#modalx-title').text("");
-            $('#modalx-content').text("");
-            const title = e.currentTarget.dataset.title;
-            const content = e.currentTarget.dataset.content;
-            $('#modalx-title').text(title);
-            $('#modalx-content').text(content);
-            $('.modalx').addClass('active');
-
-            $('body').addClass('stop-scrolling')
-            $('body').bind('touchmove', function (e) { e.preventDefault() })
-
-            e.preventDefault();
-        });
-
-
-
-        $('.modalx').click(function (e) {
-            $('.modalx').removeClass('active');
-            $('body').removeClass('stop-scrolling')
-            $('body').unbind('touchmove')
-            e.preventDefault();
-        });
-    </script>
 </body>
 
 </html>
