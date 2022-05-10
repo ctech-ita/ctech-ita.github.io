@@ -86,6 +86,12 @@
     transition: transform 600ms;
 }
 
+@media only screen and (max-width: 767px) { 
+    .modalx button.modal_close {
+        display: none;
+    }
+}
+
 .modalx button.modal_close:hover {
     background: #3E465A;
     -webkit-transform: rotate(360deg) scale(1.10);
