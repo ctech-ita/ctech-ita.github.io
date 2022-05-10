@@ -63,6 +63,11 @@
         height: 100%;
     }
 
+    .services-area .services-box .item:hover {
+        cursor: pointer;
+    }
+
+
     .services-area .services-box .item p {
         text-align: justify;
     }
@@ -228,6 +233,16 @@
 </header>
     <!-- End Header -->
 
+    <!-- Start ModalX -->
+    <div class="modalx">
+        <div class="modalx-content-wrapper">
+            <button role="button" class="modal_close" title="Close"><span></span></button>
+            <h2 id="modalx-title"></h2>
+            <span id="modalx-content"></span>
+        </div>
+    </div>
+    <!-- End ModalX -->
+
     <!-- Start Banner 
     ============================================= -->
     <div class="banner-area shape-index transparent-nav content-double text-medium">
@@ -285,76 +300,60 @@
                 <div class="row">
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
-                        <div class="item">
+                        <div class="item" data-toggle="modalx" data-title="Contabilità e adempimenti" data-content="Gestire le operazioni contabili e fiscali, come scritture di prima nota, Libro Giornale,
+                        Liquidazione IVA, invii telematici all’Agenzia delle Entrate, da effettuare puntualmente
+                        in conformità con le normative civilistiche e fiscali">
                             <i class="img-icon img-icon-contabilita"></i>
                             <h5>Contabilità e adempimenti</h5>
-                            <p>
-                                Gestire le operazioni contabili e fiscali, come scritture di prima nota, Libro Giornale,
-                                Liquidazione IVA, invii telematici all’Agenzia delle Entrate, da effettuare puntualmente
-                                in conformità con le normative civilistiche e fiscali
-                            </p>
                         </div>
                     </div>
                     <!-- End Single Item -->
 
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
-                        <div class="item">
+                        <div class="item" data-toggle="modalx" data-title="Gestione Acquisti e Vendite" data-content=" Gestire il ciclo degli acquisti in termini di approvvigionamento di materiali e servizi
+                        dai fornitori e relativo ciclo documentale. Governare tutte le attività aziendali che
+                        hanno come controparte il cliente acquisito o potenziale. Gestione documentale e
+                        informativa di preventivi, ordini, DDT, fatture, tenuta e manutenzione dei listini,
+                        promozioni ed eventuali provvigioni per gli agenti di vendita.">
                             <i class="img-icon img-icon-acquisti"></i>
                             <h5>Gestione Acquisti e Vendite</h5>
-                            <p>
-                                Gestire il ciclo degli acquisti in termini di approvvigionamento di materiali e servizi
-                                dai fornitori e relativo ciclo documentale. Governare tutte le attività aziendali che
-                                hanno come controparte il cliente acquisito o potenziale. Gestione documentale e
-                                informativa di preventivi, ordini, DDT, fatture, tenuta e manutenzione dei listini,
-                                promozioni ed eventuali provvigioni per gli agenti di vendita.
-
-                            </p>
                         </div>
                     </div>
                     <!-- End Single Item -->
 
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
-                        <div class="item">
+                        <div class="item" data-toggle="modalx" data-title="Fatturazione Elettronica" data-content="Il ciclo documentale, sia passivo che attivo, si traduce in termini di fatturazione
+                        elettronica in maniera agile, intelligente e completamente integrata all’interno del
+                        programma. Si potranno importare le fatture di acquisto elettroniche direttamente in
+                        contabilità con pochi click e allo stesso modo inviare le fatture di vendita allo SDI.">
                             <i class="img-icon img-icon-fatturazione"></i>
                             <h5>Fatturazione Elettronica</h5>
-                            <p>
-                                Il ciclo documentale, sia passivo che attivo, si traduce in termini di fatturazione
-                                elettronica in maniera agile, intelligente e completamente integrata all’interno del
-                                programma. Si potranno importare le fatture di acquisto elettroniche direttamente in
-                                contabilità con pochi click e allo stesso modo inviare le fatture di vendita allo SDI.
-                            </p>
                         </div>
                     </div>
                     <!-- End Single Item -->
 
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
-                        <div class="item">
+                        <div class="item" data-toggle="modalx" data-title="Magazzino e Logistica" data-content="Gestire il magazzino significa assicurare la continuità tra gli acquisti e i processi
+                        produttivi dell’azienda. Un’assoluta precisione nella movimentazione merci e di
+                        conseguenza maggior tempestività nella gestione documentale, per poter soddisfare
+                        esigenze e richieste dei clienti">
                             <i class="img-icon img-icon-magazzino"></i>
                             <h5>Magazzino e Logistica</h5>
-                            <p>
-                                Gestire il magazzino significa assicurare la continuità tra gli acquisti e i processi
-                                produttivi dell’azienda. Un’assoluta precisione nella movimentazione merci e di
-                                conseguenza maggior tempestività nella gestione documentale, per poter soddisfare
-                                esigenze e richieste dei clienti
-                            </p>
                         </div>
                     </div>
                     <!-- End Single Item -->
 
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
-                        <div class="item">
+                        <div class="item" data-toggle="modalx" data-title="Finanza, tesoreria e controllo" data-content="Avere evidenza delle scadenze di pagamento, incassi, insoluti, rischi credito, così da
+                            ottenere un sano bilanciamento dei flussi di cassa. Gestire i rapporti con le banche in
+                            termini di fido, RI.BA. e bonifici. Tenere traccia delle disponibilità finanziarie e
+                            delle linee di finanziamento attuali e future.">
                             <i class="img-icon img-icon-finanza"></i>
                             <h5>Finanza, tesoreria e controllo</h5>
-                            <p>
-                                Avere evidenza delle scadenze di pagamento, incassi, insoluti, rischi credito, così da
-                                ottenere un sano bilanciamento dei flussi di cassa. Gestire i rapporti con le banche in
-                                termini di fido, RI.BA. e bonifici. Tenere traccia delle disponibilità finanziarie e
-                                delle linee di finanziamento attuali e future.
-                            </p>
                         </div>
                     </div>
                     <!-- End Single Item -->
@@ -362,45 +361,36 @@
 
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
-                        <div class="item">
+                        <div class="item" data-toggle="modalx" data-title="Gestione della produzione" data-content="Realizzare quanto richiesto dai clienti e dal mercato significa, su diversi livelli di
+                        complessità, riconoscere i materiali necessari in base ai processi produttivi,
+                        pianificare la produzione in base alle disponibilità delle risorse interne/esterne,
+                        verificarne gli avanzamenti e tenere costantemente sotto controllo i costi">
                             <i class="img-icon img-icon-produzione"></i>
                             <h5>Gestione della produzione</h5>
-                            <p>
-                                Realizzare quanto richiesto dai clienti e dal mercato significa, su diversi livelli di
-                                complessità, riconoscere i materiali necessari in base ai processi produttivi,
-                                pianificare la produzione in base alle disponibilità delle risorse interne/esterne,
-                                verificarne gli avanzamenti e tenere costantemente sotto controllo i costi
-                            </p>
                         </div>
                     </div>
                     <!-- End Single Item -->
 
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
-                        <div class="item">
+                        <div class="item" data-toggle="modalx" data-title="Gestione Processi CRM" data-content="Gestire efficacemente le azioni e le informazioni legate non solo ai clienti ma anche ai
+                        potenziali, per tutto il loro cicli di vita: profilazione, acquisizione, fidelizzazione
+                        e assistenza post-vendita. Gestire i processi e le attività che richiedono prese in
+                        carico di gestioni, passaggi di informazioni e controllo, al fine di evitare errori e
+                        dimenticanze che impattano negativamente sull’andamento aziendale.">
                             <i class="img-icon img-icon-crm"></i>
                             <h5>Gestione Processi CRM</h5>
-                            <p>
-                                Gestire efficacemente le azioni e le informazioni legate non solo ai clienti ma anche ai
-                                potenziali, per tutto il loro cicli di vita: profilazione, acquisizione, fidelizzazione
-                                e assistenza post-vendita. Gestire i processi e le attività che richiedono prese in
-                                carico di gestioni, passaggi di informazioni e controllo, al fine di evitare errori e
-                                dimenticanze che impattano negativamente sull’andamento aziendale.
-                            </p>
                         </div>
                     </div>
                     <!-- End Single Item -->
 
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
-                        <div class="item">
+                        <div class="item" data-toggle="modalx" data-title="Archiviazione Documentale" data-content="Archiviare tramite un sistema di catalogazione di tutti i documenti tramite una comoda
+                        funzione di ricerca al fine di visualizzare tutti i documenti allegati senza doverli
+                        cercare negli archivi cartacei o nel proprio computer">
                             <i class="img-icon img-icon-archiviazione"></i>
                             <h5>Archiviazione Documentale</h5>
-                            <p>
-                                Archiviare tramite un sistema di catalogazione di tutti i documenti tramite una comoda
-                                funzione di ricerca al fine di visualizzare tutti i documenti allegati senza doverli
-                                cercare negli archivi cartacei o nel proprio computer
-                            </p>
                         </div>
                     </div>
                     <!-- End Single Item -->
