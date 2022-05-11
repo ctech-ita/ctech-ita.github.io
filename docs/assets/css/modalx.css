@@ -90,6 +90,10 @@
     .modalx button.modal_close {
         display: none;
     }
+
+    .modalx-content-wrapper {
+        overflow: scroll;
+    }
 }
 
 .modalx button.modal_close:hover {
