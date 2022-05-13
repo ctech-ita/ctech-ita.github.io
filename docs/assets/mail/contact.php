@@ -54,14 +54,14 @@ $address = "info@ctech.it";
 
 // Example, $e_subject = '$name . ' has contacted you via Your Website.';
 
-$e_subject = 'Richiesta Informazioni';
+$e_subject = 'Ctech.it - Richiesta Informazioni';
 
 
 // Configuration option.
 // You can change this if you feel that you need to.
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
-$e_body = "Hai ricevuta una richiesta da $name ($company - $email) ." . PHP_EOL . PHP_EOL;
+$e_body = "Hai ricevuta una richiesta da $name ($company - $email - $phone) ." . PHP_EOL . PHP_EOL;
 $e_content = "\"$comments\"" . PHP_EOL . PHP_EOL;
 
 $msg = wordwrap( $e_body . $e_content, 70 );
