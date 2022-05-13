@@ -261,17 +261,19 @@
     /* ==================================================
             Contact Form Validations
         ================================================== */
-    $(".contact-form").each(function () {
+    $("form.contact-form").each(function () {
       var formInstance = $(this);
       formInstance.submit(function () {
         var action = $(this).attr("action");
 
+        $("#submit").attr("disabled", "disabled");
+
         $("#message").slideUp(750, function () {
           $("#message").hide();
 
-          $("#submit")
-            .after('<img src="assets/img/ajax-loader.gif" class="loader" />')
-            .attr("disabled", "disabled");
+          $("#submit").after(
+            '<img src="assets/img/ajax-loader.gif" class="loader" />'
+          );
 
           $.post(
             action,
@@ -288,6 +290,7 @@
               $(".contact-form img.loader").fadeOut("slow", function () {
                 $(this).remove();
               });
+              $("form.contact-form").trigger("reset");
               $("#submit").removeAttr("disabled");
             }
           );
