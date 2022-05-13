@@ -41,6 +41,15 @@
                 width: 95vw;
             }
         }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .checkbox-group input[type=checkbox] {
+            margin-right: 10px;
+        }
     </style>
 
     <!-- Header 
@@ -112,7 +121,8 @@
                         <div class="col-lg-12">
                             <div class="row">
                                 <div class="form-group">
-                                    <input class="form-control" id="name" name="name" placeholder="Nome*" type="text">
+                                    <input class="form-control" id="name" name="name" placeholder="Nome*" type="text"
+                                        required>
                                     <span class="alert-error"></span>
                                 </div>
                             </div>
@@ -121,7 +131,7 @@
                             <div class="row">
                                 <div class="form-group">
                                     <input class="form-control" id="company" name="company" placeholder="Azienda*"
-                                        type="text">
+                                        type="text" required>
                                     <span class="alert-error"></span>
                                 </div>
                             </div>
@@ -130,14 +140,14 @@
                             <div class="row">
                                 <div class="form-group">
                                     <input class="form-control" id="email" name="email" placeholder="Email*"
-                                        type="email">
+                                        type="email" required>
                                     <span class="alert-error"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="row">
-                                <div class="form-group">
+                                <div class="form-group" required>
                                     <input class="form-control" id="phone" name="phone" placeholder="Telefono*"
                                         type="text">
                                     <span class="alert-error"></span>
@@ -148,7 +158,24 @@
                             <div class="row">
                                 <div class="form-group comments">
                                     <textarea class="form-control" id="comments" name="comments"
-                                        placeholder="Quali servizi ti interessano? *"></textarea>
+                                        placeholder="Quali servizi ti interessano? *" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="required_consent" name="required_consent" checked
+                                        required>
+                                    <label for="required_consent">Dichiaro di aver preso visione dell' <a
+                                            href="assets/attachments/privacy-policy.pdf" target="_blank">informativa</a>
+                                        e di prestare il consenso al trattamento dei miei dati personali
+                                        per le finalità ivi indicate</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="optional_consent" name="optional_consent" checked>
+                                    <label for="optional_consent">Presto il consenso al trattamento dei miei dati
+                                        personali per finalità promozionali</label>
                                 </div>
                             </div>
                         </div>

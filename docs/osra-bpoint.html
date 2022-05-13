@@ -615,6 +615,15 @@
             width: 95vw;
         }
     }
+
+    .checkbox-group {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .checkbox-group input[type=checkbox] {
+        margin-right: 10px;
+    }
 </style>
 
 <footer class="bg-light" id="footer">
@@ -663,7 +672,7 @@
                             <div class="col-lg-12">
                                 <div class="row">
                                     <div class="form-group">
-                                        <input class="form-control" id="name" name="name" placeholder="Nome*" type="text">
+                                        <input class="form-control" id="name" name="name" placeholder="Nome*" type="text" required="">
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
@@ -671,7 +680,7 @@
                             <div class="col-lg-12">
                                 <div class="row">
                                     <div class="form-group">
-                                        <input class="form-control" id="company" name="company" placeholder="Azienda*" type="text">
+                                        <input class="form-control" id="company" name="company" placeholder="Azienda*" type="text" required="">
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
@@ -679,7 +688,7 @@
                             <div class="col-lg-12">
                                 <div class="row">
                                     <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email" required="">
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
@@ -687,7 +696,7 @@
                             <div class="col-lg-12">
                                 <div class="row">
                                     <div class="form-group">
-                                        <input class="form-control" id="phone" name="phone" placeholder="Telefono*" type="text">
+                                        <input class="form-control" id="phone" name="phone" placeholder="Telefono*" type="text" required="">
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
@@ -695,10 +704,26 @@
                             <div class="col-lg-12">
                                 <div class="row">
                                     <div class="form-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Quali servizi ti interessano? *"></textarea>
+                                        <textarea class="form-control" id="comments" name="comments" placeholder="Quali servizi ti interessano? *" required=""></textarea>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="required_consent" name="required_consent" checked="" required="">
+                                        <label for="required_consent">Dichiaro di aver preso visione dell' <a href="assets/attachments/privacy-policy.pdf" target="_blank">informativa</a>
+                                            e di prestare il consenso al trattamento dei miei dati personali
+                                            per le finalità ivi indicate</label>
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="optional_consent" name="optional_consent" checked="">
+                                        <label for="optional_consent">Presto il consenso al trattamento dei miei dati
+                                            personali per finalità promozionali</label>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="col-lg-12">
                                 <div class="row align-center">
                                     <button type="submit" name="submit" id="submit">
@@ -717,11 +742,11 @@
         </div>
         <!-- Start Footer Bottom -->
         <div class="footer-bottom">
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <p>&copy; Copyright 2021. All Rights Reserved by <strong>Computer's Technology</strong></p>
-                    </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>&copy; Copyright 2022. Tutti i diritti riservati da <strong>Computer's Technology</strong>, Via
+                        Cluentina 26/b - 62100 Macerata (MC), C.F. e P.IVA: 00840390439 <a href="assets/attachments/privacy-policy.pdf" target="_blank">Privacy Policy</a> <a href="assets/attachments/cookies-policy.pdf" target="_blank">Cookie Policy</a>
+                    </p>
                 </div>
             </div>
         </div>
